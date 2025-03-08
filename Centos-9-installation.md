@@ -6,39 +6,59 @@
 
 ### VirtualBox Setup
 
-- Open VirtualBox and click **New**.  
-  ![image](https://github.com/user-attachments/assets/5eabe75d-723f-4d79-8d4a-3bb3bbc09575)
+- Open VirtualBox and click **New**.
+- ![image](https://github.com/user-attachments/assets/4010574f-3b26-4011-a4e9-a9bbde7b04f7)
+ 
+  
+- Set the name to **CentOS 9**, type to **Linux**, and version to **Red Hat (64-bit)**.
+- ![image](https://github.com/user-attachments/assets/07aa82f7-0b17-4f15-bd44-2be54894af8d)
 
-- Set the name to **CentOS 9**, type to **Linux**, and version to **Red Hat (64-bit)**.  
-  ![image](https://github.com/user-attachments/assets/9a484a55-7809-4108-92dd-09efb4368942)
-
+  
 - Allocate **4096 MB** RAM (According to requirement).  
-  2 core CPU  
-  ![image](https://github.com/user-attachments/assets/b119c7f5-3975-43f5-aa2e-f9d5495a5f79)
-
+  2 core CPU
+  ![image](https://github.com/user-attachments/assets/71559668-16fc-4594-92be-e6e274dd01ab)
+ 
+  
 - Create a virtual disk:  
   - Select **VDI (Virtual Disk Image)**  
   - Choose **Dynamically allocated**  
-  - Set **file location and size to 40 GB** (According to requirement)  
-  ![image](https://github.com/user-attachments/assets/ac6a9800-7137-4b87-b917-f46799772583)
+  - Set **file location and size to 40 GB** (According to requirement)
+  - ![image](https://github.com/user-attachments/assets/b2434416-0f17-4758-978a-b2d4eb1978cd)
+  - ![image](https://github.com/user-attachments/assets/4a38f3ac-88df-4f7d-bb7a-1e9bc81c6c5f)
 
-- Start the virtual machine, select the CentOS 9 ISO, and click **Start**.
+
+  
+- Start the virtual machine,  
+- ![image](https://github.com/user-attachments/assets/74141dc6-3982-453b-88bb-19957bf76d37)
+
+- select the CentOS 9 ISO
+- ![image](https://github.com/user-attachments/assets/09d61c84-fb26-45a5-be04-d7ed3f6f3318)
+
+- and click **mount and reboot**
+- ![image](https://github.com/user-attachments/assets/0e0d2168-0db0-43a1-9c1e-1a914434ba96)
+
+
+
 
 ---
 
 ## Installation
 
-- Choose **Install CentOS 9**.  
-  ![image](https://github.com/user-attachments/assets/55d6bd50-58c9-47a0-8d48-f177eede72b5)
+- Choose **Install CentOS 9**.
+- ![image](https://github.com/user-attachments/assets/51bc9f60-c3d7-40a7-8491-917fe9e2854d)
 
-- Select **English > English (India) > Continue**.  
-  ![image](https://github.com/user-attachments/assets/a340f715-5e09-4866-8e12-ea1ea581e0f8)
+ 
+- Select **English > English (India) > Continue**.
+- ![image](https://github.com/user-attachments/assets/8bae1089-ce2b-4023-84a8-88e5995a32aa)
+
 
 - Configure settings:  
   - **Date & Time**: Asia/Kolkata > Done  
   - **Keyboard Layout**: English (India, with rupee) > Add English (US) > Done  
-  - **Language Support**: English (India) > Done  
-  ![image](https://github.com/user-attachments/assets/1eb792fe-0f9c-425c-bc30-225f958edb16)
+  - **Language Support**: English (India) > Done
+  - ![image](https://github.com/user-attachments/assets/1b8d4d16-588b-4771-bc97-0cd0bb64fe89)
+
+  
 
 - **Installation Source**: Verify ISO > Done  
   - Auto-Detect Media  
@@ -53,9 +73,12 @@
   - Manual Options  
     Change source, verify media, or fallback to network if no valid media is found  
   
-  [for now select auto detect media]  
-  ![image](https://github.com/user-attachments/assets/38a0a1d9-2f21-4122-8ca6-de09b11f8b70)
+  [for now select auto detect media]
+  ![image](https://github.com/user-attachments/assets/d822d9c4-4834-439c-ac70-d6d587115f83)
 
+  ![image](https://github.com/user-attachments/assets/bb5d0d4a-8cdb-4b36-a402-dd14c4abea7d)
+ 
+  
 - **Software Selection**: Select **Server with GUI**  
   - Base Environment Options:  
     These define the primary purpose of the system.  
@@ -76,12 +99,17 @@
       -  File Server: Samba, NFS utilities  
       -  System Administration Tools: Diagnostic and monitoring tools  
   
-  [for now don't select anything]  
-  ![image](https://github.com/user-attachments/assets/6c379981-3de0-4d08-b73a-50bb9757bd5b)
+  [for now don't select anything]
+  ![image](https://github.com/user-attachments/assets/e4236616-ef60-4d69-8820-a5eca429d030)
+  ![image](https://github.com/user-attachments/assets/a74b1eb9-43b8-4850-94e8-ed0109f9bf5f)
 
-- Installation Destination  
-  ![image](https://github.com/user-attachments/assets/614090ef-5e8e-4007-ac3f-eb6a8039b405)
 
+ 
+
+- Installation Destination
+- ![image](https://github.com/user-attachments/assets/f4aea9c9-f85a-4172-89a3-1c59a6e9c573)
+
+  
   - **Custom partitioning** > Done  
   - Create partitions:  
     - `/boot` - **1024 MiB**, **ext4**, Standard  
@@ -122,9 +150,14 @@
       3. Encrypt My Data:  
          § Option to encrypt partitions for security  
       4. Additional Space:  
-         § Reclaim space from existing partitions if needed  
-  ![image](https://github.com/user-attachments/assets/09c94e55-bb73-4464-81bf-13c65872565d)
+         § Reclaim space from existing partitions if needed
+  ![image](https://github.com/user-attachments/assets/3e0b4162-845f-43f4-8b27-259948e796d9)
+  ![image](https://github.com/user-attachments/assets/aa373c53-02f6-4425-9009-f92c25bcfc66)
+  ![image](https://github.com/user-attachments/assets/558aa6ce-38f2-41aa-8827-7fb3ef07cdef)
+  ![image](https://github.com/user-attachments/assets/276942a8-29d5-4bd4-8a11-0be2d6972181)
 
+
+ 
   Partition Details  
   /boot Partition  
   - Purpose: Stores bootloader files  
@@ -145,9 +178,10 @@
 - **Network & Hostname**:  
   - Enable **enp0s3**  
   - Configure IPv4 manually, disable IPv6, save settings  
-  - Set hostname to **Demo**  
-  ![image](https://github.com/user-attachments/assets/52d61353-65f3-4fc3-b0e8-829220a011f5)
+  - Set hostname to **Demo**
+  - ![image](https://github.com/user-attachments/assets/52f31fba-f00a-4c35-9f77-7f9ad3923179)
 
+  
 - **Security Policy**: No changes  
   Purpose: Apply predefined security policies to the system  
   Features:  
@@ -158,8 +192,13 @@
 - 9. Set **root password** and create a user:  
   - Full name: `<demouser>`  
   - Username: `<demouser>`  
-  - Tick **Make this user administrator**  
-  ![image](https://github.com/user-attachments/assets/3daf92b9-b83a-492e-9647-a6208b0880aa)
+  - Tick **Make this user administrator**
+  - ![image](https://github.com/user-attachments/assets/2d8e2c4c-67aa-4bd1-81ca-094b82836d8b)
+  - ![image](https://github.com/user-attachments/assets/982fb8f2-dcd7-4a19-9ed2-67b0de06ea6d)
+
+
+
+  
 
   Lock the Root Account [for now Keep it disabled]  
   - Purpose:  
@@ -171,9 +210,11 @@
     -  Enables the root user to log in remotely via SSH using a password
 
   - User Creation  
-    Create a non-root user for daily use  
-  ![image](https://github.com/user-attachments/assets/7e7d9169-e363-48c6-85bd-40460a6678f5)
+    Create a non-root user for daily use
+    
 
 [click begin installation]
+![image](https://github.com/user-attachments/assets/3fb14014-7dcc-4b27-bdf7-3c81ffff9a9d)
 
-![image](https://github.com/user-attachments/assets/adeb0d27-feb0-490b-8265-fb215496e983)
+
+
