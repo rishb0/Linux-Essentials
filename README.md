@@ -1,16 +1,16 @@
 # 🐧 Linux Essentials
 
 ## 📌 Introduction to Linux
-- 📜 [UNIX, Linux, and Open Source](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Introduction-to-Linux.md)
-- 🖥️ [What is Linux?](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Introduction-to-Linux.md#2-linux)
-- 📅 History and Evolution of Linux
-- ⚙️ [Understanding the Linux Kernel](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Understanding-the-Linux-Kernel.md#-what-is-the-linux-kernel)
-- 🔑 [Key Features of Linux](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Key-Features-of-Linux.md#key-features-of-linux)
-- 📦 [Linux Distributions](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Linux-Distributions.md)
+- 📜 [UNIX, Linux, and Open Source](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Introduction-to-Linux.md#what-is-unix)
+- 🖥️ [What is Linux?](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Introduction-to-Linux.md#what-is-linux)
+- 📅 [History and Evolution of Linux](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Introduction-to-Linux.md#history-and-evolution-of-linux)
+- ⚙️ [Understanding the Linux Kernel](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Introduction-to-Linux.md#what-is-the-linux-kernel)
+- 🔑 [Key Features of Linux](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Introduction-to-Linux.md#linux-features)
+- 📦 [Linux Distributions](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Introduction-to-Linux.md#linux-distributions)
 - 📂 [Directory Structure of Linux](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Directory-Structure-of-Linux.md#linux-directory-structure)
 - 💾 [Linux Installation](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Centos-9-installation.md#centos-9-installation-gui)
-- 🔐 [Login Methods in Linux](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Login-Methods-in-Linux.md#-linux-login-methods)
-- 🔄 [Run Levels in Linux](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Run-level.md#explanation-of-runlevels)
+- 🔐 [Login Methods in Linux](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Login-Methods-in-Linux.md#linux-login-methods)
+- 🔄 [Run Levels in Linux](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Run-Level.md#runlevels-in-linux)
 
 ## 🏗️ Linux Basic Commands
 - 🗺️ [Finding Your Way (`ls`, `pwd`, `cd`)](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Basic-Commands.md#file-and-directory-management)

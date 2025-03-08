@@ -1,8 +1,6 @@
-### **Explanation of Runlevels**
+# Runlevels in Linux
 
 In Linux systems, **runlevels** define the state or mode of the system, determining which services and processes are running. Each runlevel corresponds to a specific system configuration. Traditionally, Linux used **SysVinit** (System V initialization) for managing these runlevels. 
-
-Here’s a brief overview of the common runlevels:
 
 
 
@@ -29,14 +27,3 @@ Here’s a brief overview of the common runlevels:
 | **Single-user mode for recovery**         | `sudo init 1`                 |
 | **Multi-user mode with networking**       | `sudo init 3`                 |
 | **Graphical mode (GUI)**                  | `sudo init 5`                 |
-
-### **Explanation:**
-- **`sudo init <runlevel>`**: The command to change the system's runlevel. For example:
-  - **`sudo init 3`**: Switches the system to multi-user mode with networking (runlevel 3).
-  - **`sudo init 0`**: Shuts down the system (runlevel 0).
-  - **`sudo init 6`**: Reboots the system (runlevel 6).
-  
-- **`runlevel`**: This command shows the current and previous runlevel of the system.
-
-### **Important Notes:**
-- The `init` command works only on **legacy systems** that use the **SysVinit** system. Modern Linux systems generally use **systemd**, which replaces runlevels with **targets** and uses the **`systemctl`** command.
