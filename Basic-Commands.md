@@ -1,6 +1,4 @@
-# **Basic Linux Commands**  
-
-## **File and Directory Management**  
+<h1 align="center">Basic Linux Commands</h1>
 
 ## `pwd`  
 Prints the current working directory.  
@@ -101,7 +99,7 @@ rm [options] [file/directory]
   rm -rf foldername
   ```
 
----
+
 
 ## **File Operations**  
 
@@ -175,7 +173,7 @@ ln [options] target link_name
   ln /path/to/file hardlink
   ```
 
----
+
 
 ## **System Information**  
 
@@ -208,7 +206,7 @@ Displays system and kernel information.
 uname -a
 ```
 
----
+
 
 ## **User and Session Information**  
 
@@ -237,7 +235,7 @@ id [username]
 id user
 ```
 
----
+
 
 ## **Process and Memory Information**  
 
@@ -266,7 +264,7 @@ Displays memory and swap usage in a human-readable format.
 free -h
 ```
 
----
+
 
 ## **System Shutdown and Reboot**  
 
