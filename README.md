@@ -135,5 +135,11 @@
 ### 🤝 Contributing
 Feel free to fork this repository and contribute to the guide by submitting pull requests.
 
+<a href="https://github.com/InfoSecWarrior/Linux-Essentials/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=InfoSecWarrior/Linux-Essentials&max=300">
+</a>
+</p>
+
+
 ### 📜 License
 This project is licensed under the MIT License.
