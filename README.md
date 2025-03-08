@@ -1,4 +1,4 @@
-# 🐧 Linux Essentials
+<h1 align="center">🐧 Linux Essentials</h1>
 
 ## 📌 Introduction to Linux
 - 📜 [UNIX, Linux, and Open Source](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Introduction-to-Linux.md#what-is-unix)
