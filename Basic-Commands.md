@@ -1,272 +1,298 @@
-<h1 align="center">Basic Linux Commands</h1>
+# **Basic Linux Commands**  
 
 ## **File and Directory Management**  
 
-- **Show the current working directory:**  
-  ```bash
-  pwd
+## `pwd`  
+Prints the current working directory.  
+
+**Example:**  
+```
+pwd
+```
+
+## `ls`  
+Lists files and directories in the current directory.  
+**Syntax:**  
+```
+ls [options] [directory]
+```
+**Examples:**  
+- Current location available file/directory list  
   ```
-  
-- **List all files and directories in the current directory:**  
-  ```bash
   ls
   ```
-
-- **List files with detailed information (permissions, owner, size, date modified):**  
-  ```bash
+- Detailed view  
+  ```
   ls -l
   ```
-
-- **List all files, including hidden ones (files starting with `.`):**  
-  ```bash
+- Show hidden files  
+  ```
   ls -a
   ```
-
-- **List files with human-readable sizes (KB, MB, GB):**  
-  ```bash
+- Human-readable sizes  
+  ```
   ls -lh
   ```
-
-- **List all files and directories recursively, including subdirectories:**  
-  ```bash
+- Recursive listing  
+  ```
   ls -R
   ```
 
-- **Change to a specified directory:**  
-  ```bash
-  cd directory_name
+## `cd`  
+Changes the current directory.  
+**Syntax:**  
+```
+cd [directory]
+```
+**Examples:**  
+- Go to a specific folder  
   ```
-
-- **Move up one directory level:**  
-  ```bash
+  cd /home/user/documents
+  ```
+- Move up one level  
+  ```
   cd ..
   ```
-
-- **Move to the root directory:**  
-  ```bash
+- Go to root  
+  ```
   cd /
   ```
 
-- **Create a new directory:**  
-  ```bash
+## `mkdir`  
+Creates a new directory.  
+**Syntax:**  
+```
+mkdir [directory_name]
+```
+**Examples:**  
+- Create a single directory  
+  ```
   mkdir new_folder
   ```
-
-- **Create multiple nested directories in one command:**  
-  ```bash
+- Create nested directories  
+  ```
   mkdir -p parent/child/grandchild
   ```
 
-- **Delete an empty directory:**  
-  ```bash
-  rmdir foldername
-  ```
+## `rmdir`  
+Deletes an empty directory.  
+**Syntax:**  
+```
+rmdir [directory_name]
+```
+**Example:**  
+```
+rmdir old_folder
+```
 
-- **Delete a specific file:**  
-  ```bash
+## `rm`  
+Removes files or directories.  
+**Syntax:**  
+```
+rm [options] [file/directory]
+```
+**Examples:**  
+- Remove a file  
+  ```
   rm file.txt
   ```
-
-- **Delete a directory and all its contents forcefully:**  
-  ```bash
+- Remove a folder and its contents  
+  ```
   rm -rf foldername
   ```
 
+---
+
 ## **File Operations**  
 
-- **Create an empty file:**  
-  ```bash
-  touch filename.txt
+## `touch`  
+Creates an empty file.  
+**Syntax:**  
+```
+touch [filename]
+```
+**Example:**  
+```
+touch myfile.txt
+```
+
+## `cat`  
+Displays the contents of a file.  
+**Syntax:**  
+```
+cat [filename]
+```
+**Example:**  
+```
+cat file.txt
+```
+
+## `cp`  
+Copies files and directories.  
+**Syntax:**  
+```
+cp [options] source destination
+```
+**Examples:**  
+- Copy a file  
+  ```
+  cp file.txt /backup/
+  ```
+- Copy a directory  
+  ```
+  cp -r myfolder newfolder
   ```
 
-- **Display the contents of a file:**  
-  ```bash
-  cat filename.txt
+## `mv`  
+Moves or renames files and directories.  
+**Syntax:**  
+```
+mv [source] [destination]
+```
+**Examples:**  
+- Rename a file  
   ```
-
-- **Create and edit a file (press `Ctrl + D` to save):**  
-  ```bash
-  cat > filename.txt
-  ```
-
-- **Copy a file to a specified location:**  
-  ```bash
-  cp file.txt /path/to/destination/
-  ```
-
-- **Copy an entire directory and its contents:**  
-  ```bash
-  cp -r source_folder destination_folder
-  ```
-
-- **Move or rename a file or directory:**  
-  ```bash
   mv oldname.txt newname.txt
   ```
-
-- **Create a symbolic (soft) link to a file or directory:**  
-  ```bash
-  ln -s /path/to/target linkname
+- Move a file  
+  ```
+  mv file.txt /new/location/
   ```
 
-- **Create a hard link to a file:**  
-  ```bash
-  ln /path/to/file hardlinkname
+## `ln`  
+Creates links between files.  
+**Syntax:**  
+```
+ln [options] target link_name
+```
+**Examples:**  
+- Symbolic link  
   ```
+  ln -s /path/to/file symlink
+  ```
+- Hard link  
+  ```
+  ln /path/to/file hardlink
+  ```
+
+---
 
 ## **System Information**  
 
-- **Show the current system date and time:**  
-  ```bash
-  date
-  ```
+## `date`  
+Displays the current date and time.  
+**Syntax:**  
+```
+date
+```
+**Example:**  
+```
+date
+```
 
-- **Display how long the system has been running:**  
-  ```bash
-  uptime
-  ```
+## `uptime`  
+Shows how long the system has been running.  
+**Syntax:**  
+```
+uptime
+```
+**Example:**  
+```
+uptime
+```
 
-- **Show Linux kernel details:**  
-  ```bash
-  uname -a
-  ```
+## `uname -a`  
+Displays system and kernel information.  
+**Example:**  
+```
+uname -a
+```
 
-- **Display CPU information:**  
-  ```bash
-  lscpu
-  ```
-
-- **List all connected USB devices:**  
-  ```bash
-  lsusb
-  ```
-
-- **Display PCI hardware information:**  
-  ```bash
-  lspci
-  ```
-
-- **List all storage devices and partitions:**  
-  ```bash
-  lsblk
-  ```
+---
 
 ## **User and Session Information**  
 
-- **Show the currently logged-in user:**  
-  ```bash
-  whoami
-  ```
+## `whoami`  
+Displays the currently logged-in user.  
+**Example:**  
+```
+whoami
+```
 
-- **List all users currently logged into the system:**  
-  ```bash
-  who
-  ```
+## `who`  
+Lists all logged-in users.  
+**Example:**  
+```
+who
+```
 
-- **Show detailed user login information:**  
-  ```bash
-  who -a
-  ```
+## `id`  
+Displays user ID and group information.  
+**Syntax:**  
+```
+id [username]
+```
+**Example:**  
+```
+id user
+```
 
-- **Display active users and their running processes:**  
-  ```bash
-  w
-  ```
-
-- **Show user ID and group memberships:**  
-  ```bash
-  id
-  ```
-
-## **Network and Host Information**  
-
-- **Show the system hostname:**  
-  ```bash
-  hostname
-  ```
-
-- **Display the system’s IP address:**  
-  ```bash
-  hostname -I
-  ```
-
-- **Show network configuration details (IP, MAC address, etc.):**  
-  ```bash
-  ifconfig
-  ```
-
-- **Display the system’s DNS configuration:**  
-  ```bash
-  cat /etc/resolv.conf
-  ```
-
-- **Show the network routing table:**  
-  ```bash
-  route -n
-  ```
+---
 
 ## **Process and Memory Information**  
 
-- **List currently running processes:**  
-  ```bash
-  ps aux
-  ```
+## `ps -aux`  
+Lists all running processes.  
+**Example:**  
+```
+ps -aux
+```
 
-- **Display real-time system statistics and resource usage:**  
-  ```bash
-  top
-  ```
+## `top`  
+Shows real-time system statistics.  
+**Syntax:**  
+```
+top
+```
+**Example:**  
+```
+top
+```
 
-- **Show memory and swap usage in a human-readable format:**  
-  ```bash
-  free -h
-  ```
+## `free -h`  
+Displays memory and swap usage in a human-readable format.  
+**Example:**  
+```
+free -h
+```
 
-## **Terminal Utilities**  
-
-- **Clear the terminal screen:**  
-  ```bash
-  clear
-  ```
-
-- **Show the name of the terminal device:**  
-  ```bash
-  tty
-  ```
-
-- **Display command history:**  
-  ```bash
-  history
-  ```
-
-- **Show the calendar for the current month:**  
-  ```bash
-  cal
-  ```
-
-- **Show the calendar for a specific year:**  
-  ```bash
-  cal 2025
-  ```
+---
 
 ## **System Shutdown and Reboot**  
 
-- **Shut Down the System**  
-  ```bash
+## `shutdown`  
+Shuts down or reboots the system.  
+**Syntax:**  
+```
+shutdown [options] [time]
+```
+**Examples:**  
+- Power off immediately  
+  ```
   shutdown -P now
   ```
-
-- **Restart the System**  
-  ```bash
+- Restart immediately  
+  ```
   shutdown -r now
   ```
-
-- **Cancel a Scheduled Shutdown**  
-  ```bash
+- Cancel scheduled shutdown  
+  ```
   shutdown -c
   ```
 
-- **Alternative Shutdown Commands**  
-  - `poweroff` - Turns off the system.  
-  - `init 0` - Shuts down the system.  
-  - `init 6` - Restarts the system.  
+## `reboot`  
+Reboots the system.  
+**Example:**  
+```
+reboot
+```
