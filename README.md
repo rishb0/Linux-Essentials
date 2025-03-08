@@ -82,28 +82,28 @@
 ## 💾 File System & Disk Management
 - 💿 Types of Disks
 - 🛠️ `parted` Utility
-- 🛠️ `fdisk` Utility
+- 🛠️ [`fdisk` Utility](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Fdisk.md#what-is-fdisk)
 - 📂 Mounting a File System
 - 📝 The `/etc/fstab` File
-- 📊 Quota Management
+- 📊 [Quota Management](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Managing-Quotas-LVM-and-RAID.md#quota-management-in-linux)
 - 🔄 SWAP (Partitions and Files)
 - 🏗️ RAID Overview
   - ⚡ Uses of RAID
   - 📊 RAID Levels
-- 🔍 Logical Volume Manager (LVM)
+- 🔍 [Logical Volume Manager (LVM)](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Managing-Quotas-LVM-and-RAID.md#logical-volume-manager-lvm-and-raid-setup-and-management)
 
 ## 🌐 Network Configuration and Controlling Services
-- 🌍 Network Configuration
-- 🛠️ Network Tools
-  - 🔄 `traceroute`
-  - 🔄 `tracepath`
-  - 📡 `netstat`
-  - 📡 `ss`
+- 🌍 [Network Configuration](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Network-Configuration.md#network-configuration-in-linux)
+- 🛠️ [Network Tools](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Netwrok-Monitoring.md#installation)
+  - 🔄 [`traceroute`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Network-Tools.md#traceroute)
+  - 🔄 [`tracepath`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Network-Tools.md#tracepath)
+  - 📡 [`netstat`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Netwrok-Monitoring.md#using-netstat)
+  - 📡 [`ss`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Netwrok-Monitoring.md#using-ss)
 - 🌐 Network Clients
   - 🔐 `ssh`
   - 📦 `scp`
   - 📂 `ftp`
-  - 🌍 `wget`
+  - 🌍 [`wget`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Wget.md)
 - 🔄 `rsync`
 - 📌 Checking the Status of Services
   - ✅ Is service active?
@@ -112,24 +112,29 @@
 - 🔄 Starting, Restarting, and Stopping Services
 
 ## 📊 Process Management, and Monitoring Tools
+ Here’s a more aligned and neat version of your list:
 
-### 📊 Job Management
-- 🎛️ `jobs`, `ps`, `htop`
-
+- 🔄 [`ps`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Process-Management.md#viewing-processes-with-ps-command)
+- 🗺️ [`jobs`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Process-Management.md#viewing-and-managing-jobs)
+- ➡️ [`fg`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Process-Management.md#running-commands-in-the-background--foreground)
+- 🗜️ [`htop`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Process-Management.md#monitoring-processes-in-real-time) 
+- ⚡ [`kill`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Process-Management.md#killing-processes) 
+ 
 ### 🦠 Installing & Configuring Antivirus Software
-- 🔬 `ClamAV`
+- 🔬 [`ClamAV`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/ClamAV-Linux-Antivirus.md#clamav-installation-and-usage-on-centos)
 - 🛡️ `LMD` (Linux Malware Detect)
 
 ### 🏰 Firewalls
 - 🚧 `iptables`
+- 🌐 `firewalld`
 - 🔥 `ufw` (Uncomplicated Firewall)
 
-### 📊 Process Management
-### 🛠️ Monitoring Tools
-- 📈 `vmstat`
-- 📊 `iostat`
-- 🔎 `lsof`
-- 🌐 `tcpdump`
+### 📊 Memory Management and System Performance Commands
+- 📈 [`free`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Memory-Management.md#1-memory-management-commands)
+- 📈 [`vmstat`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Memory-Management.md#2-system-performance-commands)
+- 📊 [`iostat`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Memory-Management.md#2-system-performance-commands)
+- 🔎 [`lsof`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Memory-Management.md#2-system-performance-commands)
+- 🌐 [`kill`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Memory-Management.md#3-killing-processes-using-kill)
 
 ---
 ### 🤝 Contributing
