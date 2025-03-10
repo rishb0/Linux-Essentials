@@ -1,171 +1,126 @@
-**`cp` (copy)** aur **`mv` (move)** commands CentOS/Linux me files aur directories ko copy aur move karne ke liye use hoti hain. Inka syntax aur options kaafi simple aur straightforward hain.
+Essential commands for managing files and directories in Linux, including copying (`cp`) and moving/renaming (`mv`).
 
 ---
 
-### **`cp` Command**
+# `cp`
 
-- **Purpose:** Files ya directories ko copy karna.
+The `cp` command is used to copy files and directories in Linux.
 
-### **Basic Syntax:**
-
-```bash
-cp [options] source destination
+### Syntax
 
 ```
-
-### **Examples:**
-
-1. **Single File Copy:**
-    
-    ```bash
-    cp file1.txt /path/to/destination/
-    
-    ```
-    
-    - `file1.txt` ko specified destination folder me copy karega.
-2. **Multiple Files Copy:**
-    
-    ```bash
-    cp file1.txt file2.txt /path/to/destination/
-    
-    ```
-    
-    - `file1.txt` aur `file2.txt` ko ek saath destination folder me copy karega.
-3. **Directory Copy (Recursively):**
-    
-    ```bash
-    cp -r directory_name /path/to/destination/
-    
-    ```
-    
-    - `r`: Directory aur uske andar ki saari files/subdirectories ko recursively copy karega.
-4. **Preserve File Attributes:**
-    
-    ```bash
-    cp -p file1.txt /path/to/destination/
-    
-    ```
-    
-    - `p`: Original file ke permissions, ownership, aur timestamps ko preserve karega.
-5. **Interactive Mode:**
-    
-    ```bash
-    cp -i file1.txt /path/to/destination/
-    
-    ```
-    
-    - `i`: Agar destination par file pehle se exist hai, to confirmation maangega.
-
----
-
-### **`mv` Command**
-
-- **Purpose:** Files ya directories ko move karna ya rename karna.
-
-### **Basic Syntax:**
-
-```bash
-mv [options] source destination
-
+cp [OPTION]... SOURCE DESTINATION
 ```
 
-### **Examples:**
+### Examples
 
-1. **Move a File:**
-    
-    ```bash
-    mv file1.txt /path/to/destination/
-    
-    ```
-    
-    - `file1.txt` ko destination par move karega (original location se delete ho jayega).
-2. **Rename a File:**
-    
-    ```bash
-    mv oldname.txt newname.txt
-    
-    ```
-    
-    - File ka naam `oldname.txt` se `newname.txt` me change karega.
-3. **Move a Directory:**
-    
-    ```bash
-    mv directory_name /path/to/destination/
-    
-    ```
-    
-    - Poore directory ko specified destination par move karega.
-4. **Interactive Mode:**
-    
-    ```bash
-    mv -i file1.txt /path/to/destination/
-    
-    ```
-    
-    - `i`: Agar destination par file pehle se exist hai, to confirmation maangega.
-5. **Force Move:**
-    
-    ```bash
-    mv -f file1.txt /path/to/destination/
-    
-    ```
-    
-    - `f`: Forcefully move karega, bina confirmation ke overwrite karega.
+1. Copy a file from one location to another:
+   ```
+   cp file.txt /home/user/Documents/
+   ```
 
----
+2. Copy a directory and its contents recursively:
+   ```
+   cp -r my_folder /home/user/backup/
+   ```
 
-### **Key Differences Between `cp` and `mv`:**
+3. Copy a file and preserve attributes (timestamps, ownership, etc.):
+   ```
+   cp -p file.txt /home/user/backup/
+   ```
 
-| Feature | `cp` Command | `mv` Command |
-| --- | --- | --- |
-| **Action** | Copy file/directory. | Move or rename file/directory. |
-| **Source File** | Original file remains. | Original file is removed. |
-| **Usage** | For creating duplicates. | For relocation or renaming. |
+4. Copy multiple files to a directory:
+   ```
+   cp file1.txt file2.txt /home/user/backup/
+   ```
 
----
+5. Copy a file with verbose output:
+   ```
+   cp -v file.txt /home/user/Documents/
+   ```
 
-### **Practical Examples:**
+6. Copy a file but prompt before overwriting:
+   ```
+   cp -i file.txt /home/user/Documents/
+   ```
 
-1. **Backup File Before Editing:**
-    
-    ```bash
-    cp config.conf config.conf.bak
-    
-    ```
-    
-    - `config.conf` ka backup `config.conf.bak` ke naam se banayega.
-2. **Move All Files to Another Directory:**
-    
-    ```bash
-    mv *.txt /path/to/destination/
-    
-    ```
-    
-    - Current directory ke saare `.txt` files ko destination par move karega.
-3. **Rename and Move Together:**
-    
-    ```bash
-    mv file1.txt /path/to/destination/renamed_file.txt
-    
-    ```
-    
-    - `file1.txt` ko rename karke destination par `renamed_file.txt` ke naam se move karega.
-4. **Preserve Attributes While Copying a Directory:**
-    
-    ```bash
-    cp -rp directory_name /path/to/destination/
-    
-    ```
-    
-    - `r`: Recursively copy karega.
-    - `p`: Permissions aur ownership preserve karega.
+7. Copy only newer files (to avoid overwriting newer versions):
+   ```
+   cp -u file.txt /home/user/backup/
+   ```
 
----
+8. Copy a symbolic link instead of its target:
+   ```
+   cp -P symlink /home/user/backup/
+   ```
 
-### **Tips:**
+9. Copy a file to multiple destinations:
+   ```
+   cp file.txt /home/user/Documents/ /home/user/backup/
+   ```
 
-- **Backup Before Moving:** Important files ko move karte waqt backup banana zaroori hai.
-- **Interactive Option:** `i` option use karna overwrite ke risk ko reduce karta hai.
-- **Combine with Wildcards:** Commands ke saath `` aur `?` jaise wildcards ka use karna process ko efficient banata hai.
 
-By mastering `cp` aur `mv`, aap CentOS/Linux me file management tasks ko efficiently handle kar sakte hain!
+
+
+# `mv`
+
+The `mv` command is used to move or rename files and directories in Linux.
+
+## Syntax
+
+```
+mv [OPTION]... SOURCE DESTINATION
+```
+
+## Examples
+
+1. Move a file to another directory:
+   ```
+   mv file.txt /home/user/Documents/
+   ```
+
+2. Rename a file:
+   ```
+   mv oldname.txt newname.txt
+   ```
+
+3. Move a directory:
+   ```
+   mv my_folder /home/user/backup/
+   ```
+
+4. Move multiple files to a directory:
+   ```
+   mv file1.txt file2.txt /home/user/Documents/
+   ```
+
+5. Rename a directory:
+   ```
+   mv old_folder new_folder
+   ```
+
+6. Move a file but prompt before overwriting:
+   ```
+   mv -i file.txt /home/user/Documents/
+   ```
+
+7. Move a file and provide verbose output:
+   ```
+   mv -v file.txt /home/user/Documents/
+   ```
+
+8. Force move a file without prompting:
+   ```
+   mv -f file.txt /home/user/Documents/
+   ```
+
+9. Backup an existing destination file before moving:
+   ```
+   mv --backup file.txt /home/user/Documents/
+   ```
+
+10. Move a file but prevent overwriting if the file exists:
+   ```
+   mv -n file.txt /home/user/Documents/
+   ```
+

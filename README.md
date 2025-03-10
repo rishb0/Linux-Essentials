@@ -15,14 +15,13 @@
 ## 🏗️ Linux Basic Commands
 - 🗺️ [Finding Your Way (`ls`, `pwd`, `cd`)](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Basic-Commands.md#file-and-directory-management)
 - 📁 [Creating and Removing Directories and Files (`mkdir`, `touch`, `rmdir`, `rm`)](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Basic-Commands.md#file-operations)
-- 🔄 [Copying, Moving, and Renaming Files and Directories](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/cp-and-mv-command.md)
+- 🔄 [Copying, Moving, and Renaming Files and Directories](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Copy-Move-Command.md)
 - 📜 [Using the `cat` Command](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Text-Editor.md#1-cat-command)
-- 📖 [Using the `less` and `more` Commands]()
+- 📖 [Using the `less` and `more` Commands](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Less-More.md)
 - ➡️ [Pipes and Redirects](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Redirection-in-Linux.md#redirection-operators)
 - 📦 [Archiving and Compression](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Compress-Tool.md#compression-tools-guide)
 - 🗜️ [Compression Tools (`zip`, `gzip`, `bzip`, `tar`, `7zip`)](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Compress-Tool.md#bzip2-commands)
-- 🎁 [Archiving Tools](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Compress-Tool.md#create-a-tar-archive)
-- 🔗 [Symbolic Links](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Wildcards.md#wildcards-in-linux)
+- 🔗 [Symbolic Links](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Symbolic-Link.md)
 - ⚡ [Shortcuts](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Linux-Shortcuts.md#linux-keyboard-shortcuts-cheat-sheet)
 
 ## ✍️ Text Editors
