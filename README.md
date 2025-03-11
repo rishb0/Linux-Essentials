@@ -10,7 +10,7 @@ Collection of Linux fundamental concepts, commands, and configurations. Designed
 - 🔑 [Key Features of Linux](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Introduction-to-Linux/Introduction-to-Linux.md#linux-features)
 - 📦 [Linux Distributions](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Introduction-to-Linux/Introduction-to-Linux.md#linux-distributions)
 - 📂 [Directory Structure of Linux](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Introduction-to-Linux/Directory-Structure-of-Linux.md#linux-directory-structure)
-- 💾 [Linux Installation](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Introduction-to-Linux/Centos-9-installation.md#centos-9-installation-gui)
+- 💾 [Linux Installation](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Introduction-to-Linux/Centos-9-Installation.md)
 - 🔐 [Login Methods in Linux](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Introduction-to-Linux/Login-Methods-in-Linux.md#linux-login-methods)
 - 🔄 [Run Levels in Linux](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Introduction-to-Linux/Run-Level.md#runlevels-in-linux)
 
