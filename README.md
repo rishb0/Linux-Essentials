@@ -21,8 +21,12 @@ Collection of Linux fundamental concepts, commands, and configurations. Designed
 - 📜 [Using the `cat` Command](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Linux-Basic-Commands/Text-Editor.md#1-cat-command)
 - 📖 [Using the `less` and `more` Commands](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Linux-Basic-Commands/Less-More.md)
 - ➡️ [Pipes and Redirects](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Linux-Basic-Commands/Redirection-in-Linux.md#redirection-operators)
-- 📦 [Archiving and Compression](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Linux-Basic-Commands/Compress-Tool.md#compression-tools-guide)
-- 🗜️ [Compression Tools (`zip`, `gzip`, `bzip`, `tar`, `7zip`)](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Linux-Basic-Commands/Compress-Tool.md#bzip2-commands)
+- 🗜️ [Compression Tools](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Linux-Basic-Commands/Compress-Tool.md#bzip2-commands)
+  - `zip`
+  - `gzip`
+  - `bzip`
+  - `tar`
+  - `7zip`)
 - 🔗 [Symbolic Links](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Linux-Basic-Commands/Symbolic-Link.md)
 - ⚡ [Shortcuts](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Linux-Basic-Commands/Linux-Shortcuts.md#linux-keyboard-shortcuts-cheat-sheet)
 
