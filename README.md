@@ -1,5 +1,7 @@
 <h1 align="center">🐧 Linux Essentials</h1>
 
+Collection of Linux fundamental concepts, commands, and configurations. Designed as a learning resource for beginners, it covers everything from basic commands to advanced topics such as string processing, file management, user and group management, networking, process control, firewall configuration, task scheduling, and more.
+
 ## 📌 Introduction to Linux
 - 📜 [UNIX, Linux, and Open Source](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Introduction-to-Linux/Introduction-to-Linux.md#what-is-unix)
 - 🖥️ [What is Linux?](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Introduction-to-Linux/Introduction-to-Linux.md#what-is-linux)
