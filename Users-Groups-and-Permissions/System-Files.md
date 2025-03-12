@@ -1,6 +1,6 @@
 # Linux User & Group Configuration Files
 
-Linux manages **users** and **groups** using several important configuration files. These files store essential information such as **user accounts, passwords, groups, and security settings**. Understanding these files is **crucial** for system administration and security.
+Linux manages **users** and **groups** using several important configuration files. These files store essential information such as **user accounts, passwords, groups, and security settings**. 
 
 ## Configuration Files
 
@@ -12,7 +12,6 @@ Linux manages **users** and **groups** using several important configuration fil
 
 ## `/etc/passwd` – User Account Information
 
-### Purpose
 This file contains **basic details of all user accounts** in the system, including **username, UID, GID, home directory, and default shell**.
 
 ### File Format
@@ -39,7 +38,6 @@ john:x:1001:1001:John Doe:/home/john:/bin/bash
 
 ## `/etc/shadow` – Secure Password Storage
 
-### Purpose
 Stores **encrypted passwords** and **password aging policies** for users.
 
 ### File Format
@@ -64,7 +62,6 @@ john:$6$somehash:17542:0:99999:7::::
 
 ## `/etc/group` – Group Information
 
-### Purpose
 Stores **group names, GIDs, and group members**.
 
 
@@ -86,25 +83,10 @@ developers:x:1002:alice,bob,john
 - **`1002`** → Group ID (GID)  
 - **`alice, bob, john`** → Members of the group  
 
-### Commands to Manage Groups
-
-- **View all groups:**
-  ```bash
-  cat /etc/group
-  ```
-- **Create a new group:**
-  ```bash
-  sudo groupadd developers
-  ```
-- **Add a user to a group:**
-  ```bash
-  sudo usermod -aG developers john
-  ```
 
 
 ## `/etc/gshadow` – Secure Group Management
 
-### Purpose
 Stores **group passwords and administrator settings**.
 
 ### Access

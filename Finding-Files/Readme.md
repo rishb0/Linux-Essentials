@@ -1,4 +1,4 @@
-Linux provides several powerful commands to locate files and directories efficiently. These commands include `tree`, `find`, `mlocate`, `which`, `whereis`, and `diff`.
+Linux provides several powerful commands to locate files and directories efficiently. These commands include `tree`, `find`, `mlocate`, `which` and `whereis`.
 
 
 # `tree`
@@ -206,28 +206,4 @@ whereis ls
 Find locations of `gcc`:
 ```bash
 whereis gcc
-```
-
-# `diff`
-The `diff` command compares files line by line.
-
-### Syntax
-```bash
-diff [file1] [file2]
-```
-
-### Examples:-
-Compare two text files:
-```bash
-diff file1.txt file2.txt
-```
-
-Show differences side-by-side:
-```bash
-diff -y file1.txt file2.txt
-```
-
-Ignore case differences:
-```bash
-diff -i file1.txt file2.txt
 ```

@@ -1,9 +1,7 @@
 # Linux Keyboard Shortcuts Cheat Sheet  
-──────────────────────────────────────────────  
 
 This cheat sheet provides a quick reference for general terminal commands, navigation, window management, file manager operations, and common browser/app shortcuts. Use it as a productivity boost across your Linux environment!
 
-──────────────────────────────────────────────  
 ## General Shortcuts  
 | Shortcut         | Description                                                     |
 |------------------|-----------------------------------------------------------------|
@@ -85,24 +83,17 @@ Note: Shortcuts in file managers can vary between GNOME Files, Dolphin, Thunar, 
 You can create shortcuts for frequently used commands using aliases.
 
 Example:
-
+```
 alias ll='ls -lah'
 alias gs='git status'
 alias c='clear'
-
+```
 To make them permanent, add them to ~/.bashrc or ~/.zshrc and run:
 
-source ~/.bashrc  # or source ~/.zshrc
-
-# Creating Shortcuts (Symlinks)
-
-To create a shortcut (symbolic link) to a file or directory:
-
-ln -s /path/to/original /path/to/shortcut
-
-Example:
-
-ln -s /var/www/html ~/myweb
-
-This creates myweb as a shortcut to /var/www/html.
-
+```
+source ~/.bashrc
+```
+or 
+```
+source ~/.zshrc
+```

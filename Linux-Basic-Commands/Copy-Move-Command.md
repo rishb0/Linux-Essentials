@@ -1,8 +1,7 @@
 Essential commands for managing files and directories in Linux, including copying (`cp`) and moving/renaming (`mv`).
 
----
 
-# `cp`
+## `cp`
 
 The `cp` command is used to copy files and directories in Linux.
 
@@ -59,10 +58,7 @@ cp [OPTION]... SOURCE DESTINATION
    cp file.txt /home/user/Documents/ /home/user/backup/
    ```
 
-
-
-
-# `mv`
+## `mv`
 
 The `mv` command is used to move or rename files and directories in Linux.
 
@@ -123,4 +119,3 @@ mv [OPTION]... SOURCE DESTINATION
    ```
    mv -n file.txt /home/user/Documents/
    ```
-

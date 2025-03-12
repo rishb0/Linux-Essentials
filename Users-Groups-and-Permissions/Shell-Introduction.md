@@ -12,15 +12,6 @@ A shell is a program that processes commands and returns the output. It provides
 - Automate tasks using scripts.
 - Access system resources and utilities.
 
-### Types of Shells
-
-Shells in Linux can be broadly categorized into two types:
-
-- **Login Shells**: Started when a user logs in via a terminal, displaying a login prompt.
-- **Interactive Shells**: Used after logging in, allowing users to type and execute commands.
-
----
-
 ### Common Shells in Linux
 
 #### 1. **sh (Bourne Shell)**
@@ -167,29 +158,6 @@ Shells in Linux can be broadly categorized into two types:
 
 ---
 
-#### 7. **dash (Debian Almquist Shell)**
-
-**Overview**: A lightweight shell optimized for scripting, often used as `/bin/sh`.
-
-**Features**:
-
-- Minimal resource consumption.
-- Compliant with POSIX standards, ensuring script portability.
-- Ideal for embedded systems and small environments.
-
-**Advantages**:
-
-- Fast and efficient for scripting tasks.
-- Used in critical system environments like init scripts.
-
-**Disadvantages**:
-
-- Lacks advanced interactive features.
-
-**Use Case**: System scripts, embedded systems, and environments requiring speed and compliance.
-
----
-
 ### Which Shell Should You Use?
 
 The choice of shell depends on your specific needs:
@@ -205,27 +173,25 @@ The choice of shell depends on your specific needs:
 
 You can change the default shell for your user account using the `chsh` command:
 
-**View available shells**:
+- **View available shells**:
 
-```
-cat /etc/shells
-```
+  ```
+  cat /etc/shells
+  ```
 
-**Change the shell**:
+- **Change the shell**:
 
-```
-chsh -s /bin/bash  # Replace /bin/bash with your desired shell.
-```
+  ```
+  chsh -s /bin/bash
+  ```
+  *Replace `/bin/bash` with your desired shell.*
 
 ---
 
 ### Shell Variables and `$SHELL`
 
-#### What is `$SHELL`?
 
 `$SHELL` is an environment variable in Linux that holds the path to the default shell for the current user. It indicates which shell is set for the user account as their default shell, typically configured in `/etc/passwd`.
-
-#### How to View the Current Default Shell?
 
 You can display the value of the `$SHELL` variable using the `echo` command:
 
@@ -233,11 +199,6 @@ You can display the value of the `$SHELL` variable using the `echo` command:
 echo $SHELL
 ```
 
-This will output the path to the user's default shell, such as:
-
-```
-/bin/bash
-```
 
 #### When is `$SHELL` Initialized?
 
@@ -257,51 +218,11 @@ You can invoke a different shell by typing its name (e.g., `sh`, `bash`, `zsh`) 
 
 **Example**:
 
-```
-sh    # Switches to the Bourne shell
-```
-```
-bash  # Switches to the Bash shell
-```
-
-**What Happens?**
-
-- A new shell instance is created as a subprocess of the current shell.
-- The parent shell remains active in the background, and the `$SHELL` variable does not change.
-- You can exit the new shell instance by typing `exit` or pressing `Ctrl+D`, returning to the parent shell.
-
----
-
-### Changing the Default Shell Permanently
-
-To permanently change the default shell, use the `chsh` command:
-
-**View available shells**:
-
-```
-cat /etc/shells
-```
-
-**Change the default shell**:
-
-```
-chsh -s /bin/zsh  # Replace /bin/zsh with the desired shell path
-```
-
-- **Note**: Log out and log back in for the changes to take effect.
-
----
-
-### How to Verify the Current Shell
-
-You can verify the active shell by running the following command:
-
-```
-echo $0
-```
-
-This will display the name of the currently active shell. For example:
-
-- If you're in `sh`, it might return `sh`.
-- If you're in `bash`, it might return `bash`.
-
+- Switches to the Bourne shell
+  ```
+  sh
+  ```
+- Switches to the Bash shell
+  ```
+  bash
+  ```

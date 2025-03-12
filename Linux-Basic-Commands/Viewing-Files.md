@@ -1,5 +1,3 @@
-## Viewing Files in Linux: `less` and `more`
-
 Linux provides several commands to view the contents of a file without opening a text editor. The `less` and `more` commands are commonly used for this purpose.
 
 
@@ -84,4 +82,3 @@ more [OPTIONS] filename
 
 6. Exit `more`:
    - Press `q`.
-
