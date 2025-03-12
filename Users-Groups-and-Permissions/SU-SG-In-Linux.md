@@ -128,5 +128,3 @@ sg groupname -c "command"
   - You are part of the `developers` and `admins` groups.
   - A file is owned by the `admins` group.
   - Instead of switching users, you can use `sg admins` to work on the file **without changing ownership**.
-
-
