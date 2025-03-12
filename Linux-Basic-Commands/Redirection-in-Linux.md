@@ -9,7 +9,6 @@
 - `2>&1` : Combine stderr and stdout.
 - `<<` : Here document for input redirection.
 
----
 
 # Redirection in Linux
 
@@ -63,9 +62,8 @@ Redirection in Linux allows you to control the input and output of commands. It 
 
      This feeds `input.txt` as input to `command`.
 
----
 
-### Combined Redirection
+## Combined Redirection
 
 1. **Redirecting Both stdout and stderr:**
    - You can redirect both standard output and standard error to the same file:
@@ -89,9 +87,7 @@ Redirection in Linux allows you to control the input and output of commands. It 
      command > output.txt 2> error.txt
      ```
 
----
-
-### Pipe (`|`) in Redirection
+## Pipe (`|`) in Redirection
 
 - A pipe is used to pass the output of one command as input to another:
 
@@ -107,9 +103,8 @@ Redirection in Linux allows you to control the input and output of commands. It 
   ls | grep "file"
   ```
 
----
 
-### Here Document (`<<`)
+## Here Document (`<<`)
 
 - A here document is used to provide input to a command from the script or command line itself, rather than from a file.
 
@@ -119,7 +114,6 @@ Redirection in Linux allows you to control the input and output of commands. It 
   EOF
   ```
 
----
 
 ## Examples of Redirection
 

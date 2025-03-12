@@ -17,36 +17,30 @@ ln -s TARGET LINK_NAME
 - `LINK_NAME` – The name of the symbolic link.
 
 ### **Examples**
-1. **Create a symbolic link to a file:**
+1. Create a symbolic link to a file:
    ```bash
    ln -s /path/to/original.txt link.txt
    ```
-   This creates `link.txt`, which points to `original.txt`.
 
-2. **Create a symbolic link to a directory:**
+2. Create a symbolic link to a directory:
    ```bash
    ln -s /home/user/Documents my_docs
    ```
-   This creates `my_docs`, which links to `/home/user/Documents`.
 
-3. **Overwrite an existing symbolic link:**
+3. Overwrite an existing symbolic link:
    ```bash
    ln -sf /new/path/to/file link.txt
    ```
-   The `-f` option forces the update.
 
-4. **Create a symbolic link with absolute path:**
+4. Create a symbolic link with absolute path:
    ```bash
    ln -s /var/www/html website_link
    ```
-   Now `website_link` will redirect to `/var/www/html`.
 
-5. **Create a symbolic link with a relative path:**
+5. Create a symbolic link with a relative path:
    ```bash
    ln -s ../folder/file.txt link.txt
    ```
-   This is useful when moving directories.
-
 
 
 ## **Managing Symbolic Links**  

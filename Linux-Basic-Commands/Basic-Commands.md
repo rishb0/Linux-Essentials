@@ -1,12 +1,12 @@
+
 <h1 align="center">Basic Linux Commands</h1>
 
 ## `pwd`  
 Prints the current working directory.  
 
-**Example:**  
-```
-pwd
-```
+  ```
+  pwd
+  ```
 
 ## `ls`  
 Lists files and directories in the current directory.  
@@ -35,6 +35,14 @@ ls [options] [directory]
   ```
   ls -R
   ```
+- Sort by modification time  
+  ```
+  ls -lt
+  ```
+- List only directories  
+  ```
+  ls -d */
+  ```
 
 ## `cd`  
 Changes the current directory.  
@@ -55,145 +63,44 @@ cd [directory]
   ```
   cd /
   ```
-
-## `mkdir`  
-Creates a new directory.  
-**Syntax:**  
-```
-mkdir [directory_name]
-```
-**Examples:**  
-- Create a single directory  
+- Return to the previous directory  
   ```
-  mkdir new_folder
+  cd -
   ```
-- Create nested directories  
+- Go to the home directory  
   ```
-  mkdir -p parent/child/grandchild
+  cd ~
   ```
-
-## `rmdir`  
-Deletes an empty directory.  
-**Syntax:**  
-```
-rmdir [directory_name]
-```
-**Example:**  
-```
-rmdir old_folder
-```
-
-## `rm`  
-Removes files or directories.  
-**Syntax:**  
-```
-rm [options] [file/directory]
-```
-**Examples:**  
-- Remove a file  
-  ```
-  rm file.txt
-  ```
-- Remove a folder and its contents  
-  ```
-  rm -rf foldername
-  ```
-
-
-
-## **File Operations**  
-
-## `touch`  
-Creates an empty file.  
-**Syntax:**  
-```
-touch [filename]
-```
-**Example:**  
-```
-touch myfile.txt
-```
-
-## `cat`  
-Displays the contents of a file.  
-**Syntax:**  
-```
-cat [filename]
-```
-**Example:**  
-```
-cat file.txt
-```
-
-## `cp`  
-Copies files and directories.  
-**Syntax:**  
-```
-cp [options] source destination
-```
-**Examples:**  
-- Copy a file  
-  ```
-  cp file.txt /backup/
-  ```
-- Copy a directory  
-  ```
-  cp -r myfolder newfolder
-  ```
-
-## `mv`  
-Moves or renames files and directories.  
-**Syntax:**  
-```
-mv [source] [destination]
-```
-**Examples:**  
-- Rename a file  
-  ```
-  mv oldname.txt newname.txt
-  ```
-- Move a file  
-  ```
-  mv file.txt /new/location/
-  ```
-
-## `ln`  
-Creates links between files.  
-**Syntax:**  
-```
-ln [options] target link_name
-```
-**Examples:**  
-- Symbolic link  
-  ```
-  ln -s /path/to/file symlink
-  ```
-- Hard link  
-  ```
-  ln /path/to/file hardlink
-  ```
-
-
 
 ## **System Information**  
 
 ## `date`  
 Displays the current date and time.  
-**Syntax:**  
-```
-date
-```
+
 **Example:**  
 ```
 date
 ```
 
+## `time`  
+Displays the system's current time.  
+
+**Example:**  
+```
+time
+```
+
+## `cal`  
+Displays a calendar for the current month.  
+
+**Example:**  
+```
+cal
+```
+
 ## `uptime`  
 Shows how long the system has been running.  
-**Syntax:**  
-```
-uptime
-```
+
 **Example:**  
 ```
 uptime
@@ -206,7 +113,26 @@ Displays system and kernel information.
 uname -a
 ```
 
+## `lscpu`  
+Displays CPU architecture details.  
+**Example:**  
+```
+lscpu
+```
 
+## `lsusb`  
+Lists USB devices connected to the system.  
+**Example:**  
+```
+lsusb
+```
+
+## `df -h`  
+Shows disk space usage in a human-readable format.  
+**Example:**  
+```
+df -h
+```
 
 ## **User and Session Information**  
 
@@ -220,9 +146,10 @@ whoami
 ## `who`  
 Lists all logged-in users.  
 **Example:**  
-```
-who
-```
+- List all logged-in users
+  ```
+  who
+  ```
 
 ## `id`  
 Displays user ID and group information.  
@@ -231,10 +158,9 @@ Displays user ID and group information.
 id [username]
 ```
 **Example:**  
-```
-id user
-```
-
+- ```
+  id user
+  ```
 
 
 ## **Process and Memory Information**  
@@ -248,10 +174,7 @@ ps -aux
 
 ## `top`  
 Shows real-time system statistics.  
-**Syntax:**  
-```
-top
-```
+
 **Example:**  
 ```
 top
@@ -264,7 +187,40 @@ Displays memory and swap usage in a human-readable format.
 free -h
 ```
 
+## **Help and Documentation**  
 
+## `man`  
+Displays the manual for a command.  
+**Syntax:**  
+```
+man [command]
+```
+**Example:**  
+```
+man ls
+```
+
+## `info`  
+Provides more detailed information about a command.  
+**Syntax:**  
+```
+info [command]
+```
+**Example:**  
+```
+info ls
+```
+
+## `help`  
+Displays brief help information for built-in commands.  
+**Syntax:**  
+```
+help [command]
+```
+**Example:**  
+```
+help cd
+```
 
 ## **System Shutdown and Reboot**  
 
