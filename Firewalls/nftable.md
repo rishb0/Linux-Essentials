@@ -1,4 +1,4 @@
-# **NFTABLES COMMAND GUIDE (PRACTICAL)**
+# **NFTABLES COMMANDS **
 
 This guide provides a quick reference to essential nftables commands with a one-line explanation preceding every command.
 
