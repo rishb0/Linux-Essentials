@@ -10,7 +10,7 @@ Let’s break down each of these special permissions in detail:
 
 ---
 
-### **1. Setuid (SUID)**
+### **Setuid (SUID)**
 - **Symbol**: `s` in the **user execute position**.
 - **Numeric Value**: `4` (e.g., `4755`).
 - **Purpose**: When set on an **executable file**, the file runs with the **privileges of the file owner**, not the user executing it. This is useful for programs that need elevated privileges (e.g., `passwd`).
@@ -34,7 +34,7 @@ Let’s break down each of these special permissions in detail:
 
 ---
 
-### **2. Setgid (SGID)**
+### **Setgid (SGID)**
 - **Symbol**: `s` in the **group execute position**.
 - **Numeric Value**: `2` (e.g., `2755`).
 - **Purpose**:
@@ -60,7 +60,7 @@ Let’s break down each of these special permissions in detail:
 
 ---
 
-### **3. Sticky Bit**
+### **Sticky Bit**
 - **Symbol**: `t` in the **others execute position**.
 - **Numeric Value**: `1` (e.g., `1755`).
 - **Purpose**: When set on a **directory**, only the **file owner**, **directory owner**, or **root** can delete or rename files within the directory. This is commonly used in shared directories like `/tmp`.
@@ -85,57 +85,23 @@ Let’s break down each of these special permissions in detail:
 ---
 
 ### **Examples of Special Permissions**
-1. **Setuid**:
+- File runs with owner's privileges.
    ```bash
    chmod 4755 filename
    ```
-   - File runs with owner's privileges.
-
-2. **Setgid**:
+- New files inherit the directory's group.
    ```bash
    chmod 2755 directory
    ```
-   - New files inherit the directory's group.
+   
 
-3. **Sticky Bit**:
+- Only owners can delete their files in the directory.
    ```bash
    chmod 1755 directory
    ```
-   - Only owners can delete their files in the directory.
 
 ---
 
-### **Viewing Special Permissions**
-Use `ls -l` to view special permissions:
-```bash
-ls -l
-```
-- **Setuid**: `-rwsr-xr-x`
-- **Setgid**: `-rwxr-sr-x`
-- **Sticky Bit**: `-rwxr-xr-t`
-
----
-
-### **Key Notes**
-- **Security Implications**: Special permissions can introduce security risks if misused. For example, setting SUID on a poorly written script can allow privilege escalation.
-- **Clearing Special Permissions**:
-  - To remove SUID: `chmod u-s filename`
-  - To remove SGID: `chmod g-s directory`
-  - To remove Sticky Bit: `chmod -t directory`
-
----
-
-### **Practical Use Cases**
-1. **SUID**:
-   - Used by system commands like `passwd` to allow users to change their passwords (which requires modifying `/etc/shadow`).
-
-2. **SGID**:
-   - Useful in shared directories where files need to belong to a specific group (e.g., a team project directory).
-
-3. **Sticky Bit**:
-   - Commonly used in `/tmp` to prevent users from deleting each other's files.
-
----
 
 ### **Numeric Representation of Special Permissions**
 Special permissions are represented as a **fourth digit** in the numeric mode:
@@ -148,17 +114,3 @@ You can combine them:
 - SUID + Sticky Bit: `5` (e.g., `5755`)
 - SGID + Sticky Bit: `3` (e.g., `3755`)
 - SUID + SGID + Sticky Bit: `7` (e.g., `7755`)
-
----
-
-### **Summary Table**
-
-| Permission | Symbol | Numeric Value | Purpose                                                                 |
-|------------|--------|---------------|-------------------------------------------------------------------------|
-| **SUID**   | `s`    | `4`           | File runs with owner's privileges.                                      |
-| **SGID**   | `s`    | `2`           | File runs with group's privileges; directories inherit group ownership. |
-| **Sticky** | `t`    | `1`           | Only owners can delete files in the directory.                          |
-
----
-
-By understanding and using special permissions effectively, you can enhance both the functionality and security of your Linux system. Always use them judiciously to avoid unintended security vulnerabilities.
