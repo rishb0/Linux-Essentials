@@ -279,5 +279,3 @@ To check the health of a disk:
 ```bash
 sudo smartctl -a /dev/sda
 ```
-
-This command displays SMART (Self-Monitoring, Analysis, and Reporting Technology) data for the specified disk.
