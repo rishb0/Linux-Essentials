@@ -88,16 +88,16 @@ Collection of Linux fundamental concepts, commands, and configurations. Designed
 - 📥 [Installing Packages Using `apt`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Package-Management/APT.md)
 
 ## 💾 File System & Disk Management
-- 💿 Types of Disks
-- 🛠️ `parted` Utility
+- 💿 [Types of Disks](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/File-System-and-Disk-Management/Disk-Overview.md)
+- 🛠️ [`parted` Utility](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/File-System-and-Disk-Management/Parted.md)
 - 🛠️ [`fdisk` Utility](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/File-System-and-Disk-Management/Fdisk.md#what-is-fdisk)
-- 📂 Mounting a File System
-- 📝 The `/etc/fstab` File
+- 📂 [Mounting a File System](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/File-System-and-Disk-Management/Mount.md)
+- 📝 [The `/etc/fstab` File](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/File-System-and-Disk-Management/Fdisk.md#what-is-fdisk)
 - 📊 [Quota Management](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/File-System-and-Disk-Management/Managing-Quotas-LVM-and-RAID.md#quota-management-in-linux)
-- 🔄 SWAP (Partitions and Files)
-- 🏗️ RAID Overview
-  - ⚡ Uses of RAID
-  - 📊 RAID Levels
+- 🔄 [SWAP (Partitions and Files)](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/File-System-and-Disk-Management/Swap.md)
+- 🏗️ [RAID Overview](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/File-System-and-Disk-Management/Raid-Overview.md)
+  - ⚡ [Uses of RAID](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/File-System-and-Disk-Management/Raid-Overview.md#uses-of-raid)
+  - 📊 [RAID Levels](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/File-System-and-Disk-Management/Raid-Overview.md#raid-levels)
 - 🔍 [Logical Volume Manager (LVM)](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/File-System-and-Disk-Management/Managing-Quotas-LVM-and-RAID.md#logical-volume-manager-lvm-and-raid-setup-and-management)
 
 ## 🌐 Network Configuration and Controlling Services
