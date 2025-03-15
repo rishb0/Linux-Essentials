@@ -1,512 +1,305 @@
-# **UFW COMMANDS**
+# `ufw`
 
----
+UFW (Uncomplicated Firewall) is a simple yet powerful command-line tool for managing firewall rules on Linux, primarily used in Debian-based distributions like Ubuntu.
 
-## **1. UFW Status and Management Commands**
 
-- **Check UFW status:**  
-  Displays the current UFW status (active/inactive) and the list of rules if active.
-  ```
-  ufw status
-  ```
 
-- **Check UFW status with detailed output:**  
-  Provides detailed information about UFW settings.
-  ```
-  ufw status verbose
-  ```
+## **Installation & Service Management**  
 
-- **Check UFW status with rule numbers:**  
-  Lists active rules with numbers, useful for deleting specific rules.
+- **Install UFW**  
+  ```bash
+  sudo apt install ufw -y
   ```
-  ufw status numbered
+- **Enable UFW**  
+  ```bash
+  sudo ufw enable
   ```
 
-- **Enable UFW:**  
-  Activates UFW (requires confirmation).
+- **Disable UFW**  
+  ```bash
+  sudo ufw disable
   ```
-  ufw enable
-  ```
 
-- **Disable UFW:**  
-  Deactivates UFW.
-  ```
-  ufw disable
+- **Reload UFW**  
+  ```bash
+  sudo ufw reload
   ```
 
-- **Reset UFW (delete all rules):**  
-  Clears all rules and resets UFW to its default settings.
+- **Reset UFW to Default Settings**  
+  ```bash
+  sudo ufw reset
   ```
-  ufw reset
-  ```
-
----
 
-## **2. Allow Rules**
-
-### Allow a Specific Port (TCP/UDP)
-
-- **Allow TCP port 22 (SSH):**  
-  Permits incoming SSH connections.
+- **Check UFW Service Status**  
+  ```bash
+  sudo systemctl status ufw.service
   ```
-  ufw allow 22/tcp
-  ```
 
-- **Allow UDP port 53 (DNS):**  
-  Permits incoming DNS queries.
-  ```
-  ufw allow 53/udp
+- **Enable UFW on System Boot**  
+  ```bash
+  sudo systemctl enable ufw.service
   ```
 
-- **Allow a port for both TCP and UDP (e.g., port 80):**  
-  Permits web traffic for both protocols.
+- **Start UFW Service**  
+  ```bash
+  sudo systemctl start ufw.service
   ```
-  ufw allow 80
-  ```
 
-### Allow a Port Range
+## **Checking Firewall Status**  
 
-- **Allow TCP ports 1000 to 2000:**  
-  Permits TCP traffic on ports 1000 through 2000.
-  ```
-  ufw allow 1000:2000/tcp
+- **View UFW Status**  
+  ```bash
+  sudo ufw status
   ```
 
-- **Allow UDP ports 5000 to 5100:**  
-  Permits UDP traffic on ports 5000 through 5100.
+- **View Detailed Status**  
+  ```bash
+  sudo ufw status verbose
   ```
-  ufw allow 5000:5100/udp
-  ```
 
-### Allow a Specific IP
-
-- **Allow traffic from a specific IP address:**  
-  Permits all traffic originating from the given IP.
-  ```
-  ufw allow from 192.168.1.100
+- **View Status with Rule Numbers**  
+  ```bash
+  sudo ufw status numbered
   ```
 
-### Allow a Specific IP to a Specific Port
 
-- **Allow traffic from a specific IP to port 22 (SSH):**  
-  Permits SSH connections only from the specified IP.
-  ```
-  ufw allow from 192.168.1.50 to any port 22 proto tcp
-  ```
 
-### Allow an IP Range (Subnet)
+## **Allowing Connections**  
 
-- **Allow traffic from an entire subnet:**  
-  Permits traffic from the specified subnet.
+- **Allow SSH (Port 22, TCP)**  
+  ```bash
+  sudo ufw allow ssh
   ```
-  ufw allow from 192.168.1.0/24
-  ```
-
-### Allow a Port to a Specific IP
-
-- **Allow traffic to a specific IP on port 22 (SSH):**  
-  Permits SSH connections to the specified IP.
   ```
-  ufw allow to 192.168.1.200 port 22 proto tcp
+  sudo ufw allow 22/tcp
   ```
-
-### Allow Traffic on a Specific Interface
 
-- **Allow incoming traffic on port 22 using interface eth0:**  
-  Permits SSH traffic on the eth0 interface.
+- **Allow Web Traffic (HTTP & HTTPS)**  
+  ```bash
+  sudo ufw allow http
   ```
-  ufw allow in on eth0 to any port 22 proto tcp
-  ```
-
----
-
-## **3. Deny Rules (Silently Drop Traffic)**
-
-### Deny a Specific Port
-
-- **Deny TCP port 22 (SSH):**  
-  Blocks incoming SSH connections.
   ```
-  ufw deny 22/tcp
+  sudo ufw allow https
   ```
-
-- **Deny UDP port 53 (DNS):**  
-  Blocks incoming DNS queries.
   ```
-  ufw deny 53/udp
+  sudo ufw allow 80
   ```
 
-### Deny a Port Range
-
-- **Deny TCP ports 6000 to 7000:**  
-  Blocks TCP traffic on ports 6000 through 7000.
-  ```
-  ufw deny 6000:7000/tcp
+- **Allow Specific Ports**  
+  ```bash
+  sudo ufw allow 53/udp
   ```
-
-### Deny a Specific IP
-
-- **Deny all traffic from a specific IP:**  
-  Blocks all incoming traffic from the specified IP.
   ```
-  ufw deny from 192.168.1.50
+  sudo ufw allow 8088/tcp
   ```
-
-### Deny a Specific IP to a Specific Port
 
-- **Deny traffic from a specific IP to port 22 (SSH):**  
-  Blocks SSH traffic from the given IP.
+- **Allow Port Range (TCP & UDP)**  
+  ```bash
+  sudo ufw allow 1000:2000/tcp
   ```
-  ufw deny from 192.168.1.52 to any port 22 proto tcp
   ```
-
-### Deny a Subnet
-
-- **Deny traffic from an entire subnet:**  
-  Blocks traffic originating from the specified subnet.
+  sudo ufw allow 5000:5100/udp
   ```
-  ufw deny from 10.10.10.0/24
-  ```
-
-### Deny Traffic to a Specific IP
 
-- **Deny traffic to a specific IP on port 22 (SSH):**  
-  Blocks SSH traffic directed to the specified IP.
+- **Allow Specific IP Address**  
+  ```bash
+  sudo ufw allow from 192.168.1.100
   ```
-  ufw deny to 192.168.1.44 port 22 proto tcp
-  ```
-
----
 
-## **4. Reject Rules (Block with "Connection Refused")**
-
-- **Reject TCP port 3389:**  
-  Blocks and rejects remote desktop connections with an active refusal.
-  ```
-  ufw reject 3389/tcp
+- **Allow IP Address to a Specific Port**  
+  ```bash
+  sudo ufw allow from 192.168.1.50 to any port 22 proto tcp
   ```
 
-- **Reject traffic from a specific IP to port 22 (SSH):**  
-  Blocks SSH traffic from the specified IP, sending a refusal response.
+- **Allow Entire Subnet**  
+  ```bash
+  sudo ufw allow from 192.168.1.0/24
   ```
-  ufw reject from 192.168.1.45 to any port 22 proto tcp
-  ```
 
-- **Reject traffic to a specific IP on port 22 (SSH):**  
-  Blocks SSH traffic directed to a specific IP with a rejection.
+- **Allow Traffic to a Specific Destination**  
+  ```bash
+  sudo ufw allow to 192.168.1.200 port 22 proto tcp
   ```
-  ufw reject to 192.168.1.33 port 22 proto tcp
+
+- **Allow Traffic on a Specific Interface**  
+  ```bash
+  sudo ufw allow in on eth0 to any port 22 proto tcp
   ```
 
----
 
-## **5. Limit Rules (Rate-Limiting for Brute-Force Protection)**
 
-- **Limit SSH connections:**  
-  Applies rate limiting to SSH connections to prevent brute-force attacks.
-  ```
-  ufw limit ssh
-  ```
+## **Blocking & Rejecting Traffic**  
 
-- **Limit a custom port (e.g., 443/TCP):**  
-  Applies rate limiting to TCP traffic on port 443.
+- **Deny SSH (Port 22, TCP)**  
+  ```bash
+  sudo ufw deny 22/tcp
   ```
-  ufw limit 443/tcp
-  ```
 
-- **Limit traffic from a specific IP to port 22 (SSH):**  
-  Applies rate limiting on SSH from the specified IP.
+- **Deny Specific Ports**  
+  ```bash
+  sudo ufw deny 53/udp
   ```
-  ufw limit from 192.168.1.50 to any port 22 proto tcp
+  ``` 
+  sudo ufw deny 6000:7000/tcp
   ```
-
----
 
-## **6. Route Rules (For Forwarded Traffic / NAT)**
-
-- **Allow routed traffic on a specific interface:**  
-  Permits routed traffic on eth1 (incoming) and eth0 (outgoing) for web services.
+- **Deny Specific IP Address**  
+  ```bash
+  sudo ufw deny from 192.168.1.50
   ```
-  ufw route allow in on eth1 out on eth0 to any port 80 proto tcp
-  ```
 
-- **Deny routed traffic to a specific IP:**  
-  Blocks forwarded traffic directed to the specified IP address.
-  ```
-  ufw route deny in on eth1 out on eth0 to 192.168.2.100
+- **Deny Specific IP to a Port**  
+  ```bash
+  sudo ufw deny from 192.168.1.52 to any port 22 proto tcp
   ```
 
----
-
-## **7. Deleting Rules**
-
-### Delete Rule by Number
-
-- **List numbered rules:**  
-  Shows active rules with their corresponding numbers.
-  ```
-  ufw status numbered
+- **Deny an Entire Subnet**  
+  ```bash
+  sudo ufw deny from 10.10.10.0/24
   ```
 
-- **Delete a rule by its number:**  
-  Deletes the rule corresponding to number 3.
+- **Deny Traffic to a Specific Destination**  
+  ```bash
+  sudo ufw deny to 192.168.1.44 port 22 proto tcp
   ```
-  ufw delete 3
-  ```
-
-### Delete Rule by Specification
 
-- **Delete an allowed port range rule:**  
-  Deletes the rule that allows TCP ports 90 through 99.
+- **Reject RDP (Port 3389, TCP)**  
+  ```bash
+  sudo ufw reject 3389/tcp
   ```
-  ufw delete allow 90:99/tcp
-  ```
 
-- **Delete a specific allow rule:**  
-  Deletes the rule allowing traffic from a specific IP to port 22.
+- **Reject Specific IP to a Port**  
+  ```bash
+  sudo ufw reject from 192.168.1.45 to any port 22 proto tcp
   ```
-  ufw delete allow from 192.168.1.28 to any port 22 proto tcp
+
+- **Reject Traffic to a Destination**  
+  ```bash
+  sudo ufw reject to 192.168.1.33 port 22 proto tcp
   ```
 
----
 
-## **8. Logging and Monitoring**
 
-- **Enable logging:**  
-  Turns on UFW logging of firewall activity.
-  ```
-  ufw logging on
-  ```
+## **Rate Limiting (Prevent Brute Force Attacks)**  
 
-- **Enable high-level logging:**  
-  Sets UFW logging detail to high.
+- **Limit SSH Login Attempts**  
+  ```bash
+  sudo ufw limit ssh
   ```
-  ufw logging high
-  ```
 
-- **Disable logging:**  
-  Turns off UFW logging.
-  ```
-  ufw logging off
+- **Limit HTTPS (Port 443, TCP)**  
+  ```bash
+  sudo ufw limit 443/tcp
   ```
 
-- **View UFW logs in real time:**  
-  Tails the UFW log file for live monitoring.
+- **Limit Access for a Specific IP to a Port**  
+  ```bash
+  sudo ufw limit from 192.168.1.50 to any port 22 proto tcp
   ```
-  tail -f /var/log/ufw.log
-  ```
 
-- **Check UFW logs using journalctl:**  
-  Displays recent UFW-related log entries.
-  ```
-  journalctl -xe | grep UFW
-  ```
 
----
 
-## **9. Advanced: Forwarding, NAT, and Routing**
+## **Routing & NAT Rules**  
 
-- **Enable IP masquerading (NAT):**  
-  Edit `/etc/ufw/before.rules` and add the following to enable NAT on a specific subnet using interface eth0.
+- **Allow Forwarding Between Interfaces**  
+  ```bash
+  sudo ufw route allow in on eth1 out on eth0 to any port 80 proto tcp
   ```
-  *nat
-  :POSTROUTING ACCEPT [0:0]
-  -A POSTROUTING -s 192.168.1.0/24 -o eth0 -j MASQUERADE
-  COMMIT
-  ```
 
-- **Enable IP forwarding:**  
-  Enables IP forwarding by appending the setting to UFW's sysctl configuration.
+- **Deny Forwarding Between Interfaces**  
+  ```bash
+  sudo ufw route deny in on eth1 out on eth0 to 192.168.2.100
   ```
+
+- **Enable NAT for a Specific Subnet (eth0 interface)**  
+  Edit `/etc/ufw/before.rules` and add:  
+  ```bash
   echo "net/ipv4/ip_forward=1" >> /etc/ufw/sysctl.conf
   ```
 
-- **Reload UFW to Apply Changes:**  
-  Reloads UFW without resetting or flushing current rules.
-  ```
-  ufw reload
+
+
+## **Managing Rules**  
+
+- **View Rules with Numbers**  
+  ```bash
+  sudo ufw status numbered
   ```
 
----
-
-## **10. Resetting and Troubleshooting**
-
-- **Reset UFW (Delete all rules and restore defaults):**  
-  Resets UFW to its original state by deleting custom rules.
+- **Delete a Rule by Number**  
+  ```bash
+  sudo ufw delete 3
   ```
-  ufw reset
+  ```
+  sudo ufw delete 12
   ```
 
-- **Disable UFW:**  
-  Deactivates UFW.
+- **Delete a Specific Rule**  
+  ```bash
+  sudo ufw delete allow 90:99/tcp
   ```
-  ufw disable
   ```
-
-- **Enable UFW:**  
-  Activates UFW.
-  ```
-  ufw enable
+  sudo ufw delete allow from 192.168.1.28 to any port 22 proto tcp
   ```
 
-- **Check which backend UFW is using (iptables or nftables):**  
-  Displays the alternative for iptables.
-  ```
-  update-alternatives --display iptables
+
+
+## **Logging & Monitoring**  
+
+- **Enable Logging**  
+  ```bash
+  sudo ufw logging on
   ```
 
----
-
-## **11. Additional Useful Commands**
-
-- **View UFW raw rules (verbose mode):**  
-  Shows the actual iptables/nftables rules behind UFW for detailed inspection.
-  ```
-  ufw show raw
+- **Set Logging Level (Low, Medium, High, Full)**  
+  ```bash
+  sudo ufw logging high
   ```
 
-- **Check Listening Ports & Open Services:**  
-  Verifies which ports and services are actively in use on your system.
-  ```
-  netstat -tulnp | grep LISTEN
-  ```
-  or
-  ```
-  ss -tulnp
+- **Disable Logging**  
+  ```bash
+  sudo ufw logging off
   ```
 
-- **Reload UFW Without Flushing Rules:**  
-  Applies changes in UFW without resetting existing rules.
-  ```
-  ufw reload
-  ```
-
-- **List Predefined Application Profiles:**  
-  Displays the available UFW application profiles.
-  ```
-  ufw app list
+- **View Firewall Logs in Real-Time**  
+  ```bash
+  tail -f /var/log/ufw.log
   ```
 
-- **View Details of a Specific Application Profile:**  
-  Shows detailed information about the "Apache" profile.
-  ```
-  ufw app info "Apache"
+
+
+## **Application Profiles**  
+
+- **List Available Application Profiles**  
+  ```bash
+  sudo ufw app list
   ```
 
-- **Check UFW Rule Order for Conflicts:**  
-  Displays added UFW rules in order to help prevent conflicts.
-  ```
-  ufw show added
-  ```
-
----
-
-## **12. Installation and Basic Setup**
-
-- **Update Package Lists:**  
-  Updates your system's package list.
-  ```
-  apt update
+- **View Details of a Specific Application Profile**  
+  ```bash
+  sudo ufw app info "Apache"
   ```
 
-- **Install UFW:**  
-  Installs UFW on your system.
-  ```
-  apt install ufw
-  ```
-
-- **Check UFW Version:**  
-  Displays UFW version information.
-  ```
-  ufw version
+- **Allow a Service Using an Application Profile**  
+  ```bash
+  sudo ufw allow "Apache Full"
   ```
 
-- **Show Added Rules:**  
-  Displays currently added UFW rules.
-  ```
-  ufw show added
+
+
+## **Other UFW Commands**  
+
+- **Show Raw Rules**  
+  ```bash
+  sudo ufw show raw
   ```
 
-- **Allow Specific Services and Ports:**
-
-  - **Allow SSH:**
-    ```
-    ufw allow ssh
-    ```
-  
-  - **Allow a custom TCP port (e.g., 8088):**
-    ```
-    ufw allow 8088/tcp
-    ```
-  
-  - **Allow HTTPS:**
-    ```
-    ufw allow https
-    ```
-  
-  - **Allow Telnet:**
-    ```
-    ufw allow telnet
-    ```
-  
-  - **Allow SMTP:**
-    ```
-    ufw allow smtp
-    ```
-  
-  - **Allow POP3:**
-    ```
-    ufw allow pop3
-    ```
-
-- **Check UFW Service Status:**  
-  Displays the status of the UFW service.
-  ```
-  systemctl status ufw.service
+- **Show Recently Added Rules**  
+  ```bash
+  sudo ufw show added
   ```
 
-- **Enable UFW Service on Boot:**  
-  Ensures that UFW starts automatically on system boot.
+- **Check UFW Version**  
+  ```bash
+  sudo ufw version
   ```
-  systemctl enable ufw.service
-  ```
-
-- **Start UFW Service:**  
-  Starts the UFW service.
-  ```
-  systemctl start ufw.service
-  ```
-
-- **Show Numbered Rules:**  
-  Lists active rules with assigned numbers.
-  ```
-  ufw status numbered
-  ```
-
-- **Delete Specific Rules by Number:**  
-  Deletes the rule corresponding to rule number 12.
-  ```
-  ufw delete 12
-  ```
-  Delete another rule (e.g., rule number 24):
-  ```
-  ufw delete 24
-  ```
-
-- **Delete Rules by Full Specification:**  
-  Deletes the rule allowing TCP ports 90 to 99.
-  ```
-  ufw delete allow 90:99/tcp
-  ```
-  Deletes the rule allowing from 192.168.1.28 to port 22.
-  ```
-  ufw delete allow from 192.168.1.28 to any port 22 proto tcp
-  ```
-
-- **List Available Applications:**  
-  Displays predefined application profiles.
-  ```
-  ufw app list
-  ```
-
----

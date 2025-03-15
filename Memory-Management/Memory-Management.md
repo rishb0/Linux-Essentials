@@ -1,148 +1,187 @@
-# Memory Management and System Performance Commands
+# Memory Management and System Performance
 
-## 1. Memory Management Commands
+Memory management in Linux is crucial for optimizing system performance. It involves monitoring RAM usage, clearing cache, managing swap space, and tuning kernel parameters to ensure smooth operation.
 
-1. **Free Command:**
-   - `free -h`: Display memory usage in human-readable format (KB, MB, GB).
+
+
+## `free`
+
+The free command is used to display information about system memory usage, including total, used, free, shared, buffer/cache, and swap memory.
+
+   - Display memory usage in human-readable format (KB, MB, GB).
      ```bash
      free -h
      ```
 
-   - `free -g`: Display memory usage in gigabytes.
+   - Display memory usage in gigabytes.
      ```bash
      free -g
      ```
 
-   - `free -m`: Display memory usage in megabytes.
+   - Display memory usage in megabytes.
      ```bash
      free -m
      ```
 
-   - `free -k`: Display memory usage in kilobytes.
+   - Display memory usage in kilobytes.
      ```bash
      free -k
      ```
 
----
 
-## 2. System Performance Commands
+## `vmstat`
+The vmstat (Virtual Memory Statistics) command provides a real-time view of system performance, including CPU usage, memory, swap, disk I/O, and system processes.
 
-1. **Vmstat Command:**
-   - `vmstat`: Display basic system performance stats (memory, CPU, processes, etc.).
+
+   - Display basic system performance stats (memory, CPU, processes, etc.).
      ```bash
      vmstat
      ```
 
-   - `vmstat -a`: Show active memory and swap usage.
+   - Show active memory and swap usage.
      ```bash
      vmstat -a
      ```
 
-   - `vmstat -d`: Display disk statistics.
+   - Display disk statistics.
      ```bash
      vmstat -d
      ```
 
-   - `vmstat -s`: Display summary of memory, swap, and disk statistics.
+   - Display summary of memory, swap, and disk statistics.
      ```bash
      vmstat -s
      ```
 
-   - `vmstat 4 5`: Display performance stats every 4 seconds for 5 iterations.
+   - Display performance stats every 4 seconds for 5 iterations.
      ```bash
      vmstat 4 5
      ```
 
-   - `vmstat -s m 4 5`: Display memory statistics every 4 seconds for 5 iterations.
+   - Display memory statistics every 4 seconds for 5 iterations.
      ```bash
      vmstat -s m 4 5
      ```
 
-2. **Iostat Command:**
-   - `iostat`: Display input/output statistics for devices and partitions.
+## `iostat`
+
+The `iostat` command is used to **monitor CPU usage and disk I/O statistics**, helping to analyze system performance and identify bottlenecks.  
+
+   - Display input/output statistics for devices and partitions.
      ```bash
      iostat
      ```
 
-   - Install `iostat` if not installed:
-     ```bash
-     yum install sysstat
-     ```
-
-   - `iostat 4 5`: Display I/O statistics every 4 seconds for 5 iterations.
+   - Display I/O statistics every 4 seconds for 5 iterations.
      ```bash
      iostat 4 5
      ```
+  - **Monitor Disk and CPU Performance Continuously**  
+    ```bash
+    iostat 2
+    ```
+- **Show Detailed Disk Utilization (`-x` option)**  
+    ```bash
+    iostat -x
+    ```
+- **Display Output in Megabytes**  
+    ```bash
+    iostat -m
+    ```
+- **Monitor Specific Disk Only**  
+    ```bash
+    iostat -p sda
+    ```
+- **Show CPU Usage Only**  
+    ```bash
+    iostat -c
+    ```
 
----
 
-3. **Listing Open Files with `lsof`**
+## `lsof`  
 
-   - Install `lsof` Command (if not installed):
-     ```bash
-     yum install lsof
-     ```
+The `lsof` (**List Open Files**) command is used to display information about **open files and the processes using them**. Since **everything in Linux is a file** (including network connections, devices, and directories), `lsof` is a powerful tool for monitoring system activity.
 
-   - To list open files by the user `root`:
-     ```bash
-     lsof -u root
-     ```
+- **Lists all open files on the system.**  
+  ```bash
+  lsof
+  ```
+- **List Open Files by a Specific User**  
+  ```bash
+  lsof -u username
+  ```
+- **Find the Process Using a Specific File**  
+  ```bash
+  lsof /path/to/file
+  ```
+- **Show Open Files for a Specific Process**  
+  ```bash
+  lsof -p 1234
+  ```
+- **Find Which Process is Using a Port**  
+  ```bash
+  lsof -i :80
+  ```
+- **List Open Files by Network Connections**  
+  ```bash
+  lsof -i
+  ```
+- **Show Open Files of a Specific Type**  
+  ```bash
+  lsof -i tcp
+  ```
+  ```
+  lsof -i udp
+  ```
+- **Find Open Files on a Specific Disk or Mount Point**  
+  ```bash
+  lsof /mnt/usb
+  ```
 
-   - To list network files (all types of network connections):
-     ```bash
-     lsof -N -i
-     ```
+## `Kill`
 
-   - To list open UDP network connections:
-     ```bash
-     lsof -n -i UDP
-     ```
+The `kill` command in Linux is used to terminate processes by sending signals. It allows you to stop processes based on their Process ID (PID).  
 
-   - To list open TCP network connections:
-     ```bash
-     lsof -n -i TCP
-     ```
 
-   - To list open TCP port 22 (usually SSH):
-     ```bash
-     lsof -n -i TCP:22
-     ```
+## **Syntax**  
+```bash
+kill [signal] PID
+```
 
-   - To list open UDP ports 22, 443, and 90:
-     ```bash
-     lsof -n -i UDP:22,443,90
-     ```
 
-   - To list open UDP ports in the range 80-220:
-     ```bash
-     lsof -n -i UDP:80-220
-     ```
 
-   - To list open files for process ID 6029:
-     ```bash
-     lsof -n -p 6029
-     ```
+## **Examples**  
 
-   - To list open IPv4 network connections:
-     ```bash
-     lsof -n -i 4
-     ```
+- **List Running Processes (Find PID)**  
+  ```bash
+  ps aux
+  ```
 
-   - To list open IPv6 network connections:
-     ```bash
-     lsof -n -i 6
-     ```
+- **Kill a Process by PID (Default Signal: TERM - 15)**  
+  ```bash
+  kill 1234
+  ```
 
-   - To get process IDs (PIDs) of files opened by the user `Armour`:
-     ```bash
-     lsof -t -u Armour
-     ```
----
+- **Force Kill a Process (SIGKILL - 9)**  
+  ```bash
+  kill -9 1234
+  ```
 
-## 3. Killing Processes Using `kill`
+- **Kill All Instances of a Program**  
+  ```bash
+  killall firefox
+  ```
 
-   - To kill processes opened by the user `Armour` using the process IDs (PIDs) retrieved from `lsof`:
-     ```bash
-     kill -9 $(lsof -t -u Armour)
-     ```
-___
+- **Kill a Process by Name Using `pkill`**  
+  ```bash
+  pkill -9 firefox
+  ```
+
+- **Kill All Processes by a Specific User**  
+  ```bash
+  pkill -u username
+  ```
+- **View All Available Kill Signals**  
+  ```bash
+  kill -l
+  ```
