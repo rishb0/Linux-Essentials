@@ -78,12 +78,14 @@ Collection of Linux fundamental concepts, commands, and configurations. Designed
 - 🔐 [ACL Permissions](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Users-Groups-and-Permissions/ACL.md#)
 
 ## 📦 Package Management
-- 📂 [Overview of RPM and SRPM Packages](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Package-Management/RPM-Commands.md#rpm-commands)
-- 🏗️ [Explanation of Different Architectures](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Package-Management/Package-Management.md#package-management-in-linux)
-- 🛠️ [Installing Packages Using RPM](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Package-Management/RPM-Commands.md#installing-packages)
+- 📂 [Overview of RPM, SRPM and DPKG](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Package-Management/Readme.md)
+- 🏗️ [Explanation of Different Architectures](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Package-Management/Readme.md#Different-Architectures)
+- 🛠️ [Installing Packages Using RPM](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Package-Management/RPM.md)
 - 🌐 [Understanding Repositories](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Package-Management/Understanding-Repositories.md#-understanding-repositories-in-linux-)
-  - 🏪 [Types of Repositories](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Package-Management/Types-of-Repositories.md#-types-of-repositories-in-linux)
-- 📥 [Installing Packages Using `yum`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Package-Management/YUM-Commands-and-Groups.md#installing-and-removing-packages)
+  - 🏪 [Types of Repositories](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Package-Management/Understanding-Repositories.md#Types-of-Repositories)
+- 📥 [Installing Packages Using `yum`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Package-Management/YUM.md)
+- 📥 [Installing Packages Using `dpkg`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Package-Management/DPKG.md)
+- 📥 [Installing Packages Using `apt`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Package-Management/APT.md)
 
 ## 💾 File System & Disk Management
 - 💿 Types of Disks
@@ -100,47 +102,52 @@ Collection of Linux fundamental concepts, commands, and configurations. Designed
 
 ## 🌐 Network Configuration and Controlling Services
 - 🌍 [Network Configuration](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Network-Configuration/Network-Configuration.md#network-configuration-in-linux)
-- 🛠️ [Network Tools](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Network-Configuration/Netwrok-Monitoring.md#installation)
-  - 🔄 [`traceroute`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Network-Configuration/Network-Tools.md#traceroute)
-  - 🔄 [`tracepath`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Network-Configuration/Network-Tools.md#tracepath)
-  - 📡 [`netstat`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Network-Configuration/Netwrok-Monitoring.md#using-netstat)
-  - 📡 [`ss`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Network-Configuration/Netwrok-Monitoring.md#using-ss)
+  - [`hostname`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Network-Configuration/Hostname.md)
+  - [`ip`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Network-Configuration/IP.md)
+  - [`ifconfig`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Network-Configuration/Ifconfig.md)
+  - [`nmtui` and `nmcli`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Network-Configuration/Nmtui-and-Nmcli.md)
+- 🛠️ Network Tools
+  - 🔄 [`traceroute`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Network-Configuration/Traceroute.md)
+  - 🔄 [`tracepath`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Network-Configuration/Tracepath.md)
+  - 📡 [`netstat`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Network-Configuration/Netstat.md)
+  - 📡 [`ss`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Network-Configuration/SS.md)
+  - 📡 [`ping`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Network-Configuration/Ping.md)
 - 🌐 Network Clients
-  - 🔐 `ssh`
-  - 📦 `scp`
-  - 📂 `ftp`
+  - 🔐 [`ssh`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Network-Configuration/SSH-and-SCP.md)
+  - 📦 [`scp`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Network-Configuration/SSH-and-SCP.md#SCP)
+  - 📂 [`ftp`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Network-Configuration/FTP.md)
   - 🌍 [`wget`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Network-Configuration/Wget.md)
-- 🔄 `rsync`
-- 📌 Checking the Status of Services
-  - ✅ Is service active?
-  - ✅ Is service enabled?
-  - 📜 Listing the Active/Inactive State of Loaded Units
-- 🔄 Starting, Restarting, and Stopping Services
+- 🔄 [`rsync`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Network-Configuration/Rsync.md)
+- 📌 [Checking the Status of Services](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Network-Configuration/Service-Managment.md#Checking-the-Status-of-a-Service)
+  - ✅ [Is service active?](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Network-Configuration/Service-Managment.md#Checking-the-Status-of-a-Service#Checking-if-a-Service-is-Active-or-Enabled)
+  - ✅ [Is service enabled?](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Network-Configuration/Service-Managment.md#Checking-the-Status-of-a-Service#Checking-if-a-Service-is-Active-or-Enabled)
+  - 📜 [Listing the Active/Inactive State of Loaded Units](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Network-Configuration/Service-Managment.md#Listing-Services)
+- 🔄 [Starting, Restarting, and Stopping Services](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Network-Configuration/Service-Managment.md#Starting-Restarting-and-Stopping-a-Service)
 
 ## 📊 Process Management, and Monitoring Tools
- Here’s a more aligned and neat version of your list:
 
 - 🔄 [`ps`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Process-Management/Process-Management.md#viewing-processes-with-ps-command)
 - 🗺️ [`jobs`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Process-Management/Process-Management.md#viewing-and-managing-jobs)
 - ➡️ [`fg`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Process-Management/Process-Management.md#running-commands-in-the-background--foreground)
 - 🗜️ [`htop`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Process-Management/Process-Management.md#monitoring-processes-in-real-time) 
-- ⚡ [`kill`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Process-Management/Process-Management.md#killing-processes) 
+- ⚡ [`kill`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Memory-Management/Memory-Management.md#kill) 
  
 ### 🦠 Installing & Configuring Antivirus Software
-- 🔬 [`ClamAV`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Antivirus-Softwares/ClamAV-Linux-Antivirus.md#clamav-installation-and-usage-on-centos)
-- 🛡️ `LMD` (Linux Malware Detect)
+- 🔬 [`ClamAV`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Antivirus-Softwares/ClamAV.md)
+- 🛡️ [`LMD`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Antivirus-Softwares/ClamAV.md)
 
 ### 🏰 Firewalls
-- 🚧 `iptables`
-- 🌐 `firewalld`
-- 🔥 `ufw` (Uncomplicated Firewall)
+- 🚧 [`iptables`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Firewalls/Iptables.md)
+- 🌐 [`firewalld`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Firewalls/Firewalld.md)
+- 🔥 [`ufw`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Firewalls/UFW.md)
+- 🚧 [`nft`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Firewalls/Nftable.md)
 
 ### 📊 Memory Management and System Performance Commands
-- 📈 [`free`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Memory-Management/Memory-Management.md#1-memory-management-commands)
-- 📈 [`vmstat`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Memory-Management/Memory-Management.md#2-system-performance-commands)
-- 📊 [`iostat`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Memory-Management/Memory-Management.md#2-system-performance-commands)
-- 🔎 [`lsof`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Memory-Management/Memory-Management.md#2-system-performance-commands)
-- 🌐 [`kill`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Memory-Management/Memory-Management.md#3-killing-processes-using-kill)
+- 📈 [`free`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Memory-Management/Memory-Management.md#free)
+- 📈 [`vmstat`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Memory-Management/Memory-Management.md#vmstat)
+- 📊 [`iostat`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Memory-Management/Memory-Management.md#iostat)
+- 🔎 [`lsof`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Memory-Management/Memory-Management.md#losf)
+- 🌐 [`kill`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Memory-Management/Memory-Management.md#kill)
 
 ---
 ### 🤝 Contributing

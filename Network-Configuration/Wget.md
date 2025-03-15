@@ -1,116 +1,62 @@
-w get command.md 
-Mastering the wget Command
+# `wget`  
 
-Effortlessly Download Files from the Internet!
-
-The wget command is a powerful and flexible command-line utility for downloading files from the web. It supports HTTP, HTTPS, and FTP protocols and is available on Linux, Unix-like systems, and Windows.
+The `wget` command is a free utility for non-interactive downloading of files from the internet. It supports HTTP, HTTPS, and FTP protocols and is useful for automated downloads and scripting.  
 
 
----
-
-✨ Basic Syntax
-
+## **Syntax**  
+```bash
 wget [options] [URL]
+```
 
+## **Examples**  
 
----
+- **Download a File**  
+  ```bash
+  wget https://example.com/file.zip
+  ```
 
-🔥 Common Uses of wget
+- **Download a File and Save with a Different Name**  
+  ```bash
+  wget -O myfile.zip https://example.com/file.zip
+  ```
 
-1️⃣ Download a Single File
+- **Resume an Interrupted Download**  
+  ```bash
+  wget -c https://example.com/file.zip
+  ```
 
-wget https://example.com/file.zip
+- **Download a File in the Background**  
+  ```bash
+  wget -b https://example.com/file.zip
+  ```
 
-✅ Fetches file.zip from the specified URL.
+- **Limit Download Speed to 500 KB/s**  
+  ```bash
+  wget --limit-rate=500k https://example.com/file.zip
+  ```
 
+- **Download Multiple Files from a List**  
+  ```bash
+  wget -i urls.txt
+  ```
+  *(Ensure `urls.txt` contains one URL per line.)*
 
----
+- **Download an Entire Website (Mirroring)**  
+  ```bash
+  wget --mirror -p --convert-links -P ./local https://example.com/
+  ```
 
-2️⃣ Save File with a Different Name
+- **Download a File with Authentication (Username & Password)**  
+  ```bash
+  wget --user=username --password=password https://example.com/file.zip
+  ```
 
-wget -O newname.zip https://example.com/file.zip
+- **Set a Custom User-Agent (Bypass Blocks)**  
+  ```bash
+  wget --user-agent="Mozilla/5.0" https://example.com/file.zip
+  ```
 
-✅ Downloads and saves it as newname.zip.
-
-
----
-
-3️⃣ Resume an Interrupted Download
-
-wget -c https://example.com/largefile.iso
-
-✅ Continues an incomplete download without starting over.
-
-
----
-
-4️⃣ Download Multiple Files from a List
-
-wget -i filelist.txt
-
-✅ Reads a list of URLs from filelist.txt and downloads them all.
-
-
----
-
-5️⃣ Download a Website Recursively
-
-wget -r https://example.com/
-
-✅ Saves an entire website for offline use.
-
-
----
-
-6️⃣ Limit Download Speed
-
-wget --limit-rate=200k https://example.com/file.zip
-
-✅ Restricts speed to 200 KB/s, useful for bandwidth control.
-
-
----
-
-7️⃣ Download in the Background
-
-wget -b https://example.com/largefile.iso
-
-✅ Runs the download in the background while you continue working.
-
-
----
-
-8️⃣ Download with Authentication
-
-wget --user=username --password=password https://example.com/securefile.zip
-
-✅ Downloads from password-protected sites.
-
-
----
-
-9️⃣ Mirror an Entire Website
-
-wget --mirror -p --convert-links -P ./localdir https://example.com/
-
-✅ Creates a fully browsable local copy of a website.
-
-
----
-
-🔟 Set a Custom User-Agent
-
-wget --user-agent="Mozilla/5.0" https://example.com/file.zip
-
-✅ Helps bypass wget restrictions on certain websites.
-
-
----
-
-🛠 Checking Installed Version
-
-wget --version
-
-✅ Displays the installed wget version and details.
-
-🔹 Now you're all set to harness the full power of wget! 🚀
+- **Skip SSL Certificate Checks**  
+  ```bash
+  wget --no-check-certificate https://example.com/file.zip
+  ```
