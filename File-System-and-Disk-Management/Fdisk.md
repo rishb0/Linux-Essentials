@@ -292,6 +292,7 @@ No errors detected.
   ```
   x
   ```
+---
 
 # GDISK COMMANDS
 
@@ -378,3 +379,40 @@ gdisk [options] <device>
   ```
   q
   ```
+--- 
+# PARTPROBE COMMANDS
+
+- **`partprobe` updates the kernel's partition table without a reboot.**  
+- **Use after creating, deleting, or modifying partitions to apply changes.**  
+- **`partprobe` updates the whole table, while `partx` manages specific partitions.**
+
+---
+
+## Basic Syntax
+
+```
+partprobe [OPTIONS] [DEVICE]
+```
+- Refreshes partition table for all disks or a specific device
+- Helps avoid system reboot after partition modifications
+
+---
+
+## Common Commands
+
+- **Refresh All Partition Tables:**
+  ```
+  partprobe
+  ```
+
+- **Refresh Specific Disk:**
+  ```
+  partprobe /dev/sdb
+  ```
+
+- **Check Reload Status:**
+  ```
+  echo $?
+  ```
+  - `0`: Success
+  - `1`: Error
