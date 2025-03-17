@@ -3,19 +3,19 @@
 Collection of Linux fundamental concepts, commands, and configurations. Designed as a learning resource for beginners, it covers everything from basic commands to advanced topics such as string processing, file management, user and group management, networking, process control, firewall configuration, task scheduling, and more.
 
 ## 📌 Introduction to Linux
-- 📜 [UNIX, Linux, and Open Source](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Introduction-to-Linux/Introduction-to-Linux.md#what-is-unix)
-- 🖥️ [What is Linux?](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Introduction-to-Linux/Introduction-to-Linux.md#what-is-linux)
-- 📅 [History and Evolution of Linux](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Introduction-to-Linux/Introduction-to-Linux.md#history-and-evolution-of-linux)
-- ⚙️ [Understanding the Linux Kernel](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Introduction-to-Linux/Introduction-to-Linux.md#what-is-the-linux-kernel)
-- 🔑 [Key Features of Linux](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Introduction-to-Linux/Introduction-to-Linux.md#linux-features)
-- 📦 [Linux Distributions](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Introduction-to-Linux/Introduction-to-Linux.md#linux-distributions)
+- 📜 [UNIX, Linux, and Open Source](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Introduction-to-Linux/Readme.md#what-is-unix)
+- 🖥️ [What is Linux?](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Introduction-to-Linux/Readme.md#what-is-linux)
+- 📅 [History and Evolution of Linux](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Introduction-to-Linux/Readme.md#history-and-evolution-of-linux)
+- ⚙️ [Understanding the Linux Kernel](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Introduction-to-Linux/Readme.md#what-is-the-linux-kernel)
+- 🔑 [Key Features of Linux](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Introduction-to-Linux/Readme.md#linux-features)
+- 📦 [Linux Distributions](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Introduction-to-Linux/Readme.md#linux-distributions)
 - 📂 [Directory Structure of Linux](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Introduction-to-Linux/Directory-Structure-of-Linux.md#linux-directory-structure)
 - 💾 [Linux Installation](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Introduction-to-Linux/Centos-9-Installation.md)
 - 🔐 [Login Methods in Linux](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Introduction-to-Linux/Login-Methods-in-Linux.md#linux-login-methods)
 - 🔄 [Run Levels in Linux](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Introduction-to-Linux/Run-Level.md#runlevels-in-linux)
 
 ## 🏗️ Linux Basic Commands
-- 🗺️ [Finding Your Way (`ls`, `pwd`, `cd`)](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Linux-Basic-Commands/Basic-Commands.md#file-and-directory-management)
+- 🗺️ [Finding Your Way (`ls`, `pwd`, `cd`)](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Linux-Basic-Commands/Readme.md#file-and-directory-management)
 - 📁 [Creating and Removing Directories and Files (`mkdir`, `touch`, `rmdir`, `rm`)](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Linux-Basic-Commands/Create-and-Remove-File-and-Directory.md)
 - 🔄 [Copying, Moving, and Renaming Files and Directories](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Linux-Basic-Commands/Copy-Move-Command.md)
 - 📜 [Using the `cat` Command](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Text-Editors/cat.md)
@@ -88,7 +88,7 @@ Collection of Linux fundamental concepts, commands, and configurations. Designed
 - 📥 [Installing Packages Using `apt`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Package-Management/APT.md)
 
 ## 💾 File System & Disk Management
-- 💿 [Types of Disks](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/File-System-and-Disk-Management/Disk-Overview.md)
+- 💿 [Types of Disks](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/File-System-and-Disk-Management/Readme.md)
 - 🛠️ [`parted` Utility](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/File-System-and-Disk-Management/Parted.md)
 - 🛠️ [`fdisk` Utility](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/File-System-and-Disk-Management/Fdisk.md#what-is-fdisk)
 - 📂 [Mounting a File System](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/File-System-and-Disk-Management/Mount.md)
@@ -101,7 +101,7 @@ Collection of Linux fundamental concepts, commands, and configurations. Designed
 - 🔍 [Logical Volume Manager (LVM)](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/File-System-and-Disk-Management/Logical-Volume-Manager.md)
 
 ## 🌐 Network Configuration and Controlling Services
-- 🌍 [Network Configuration](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Network-Configuration/Network-Configuration.md#network-configuration-in-linux)
+- 🌍 [Network Configuration](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Network-Configuration/Readme.md)
   - [`hostname`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Network-Configuration/Hostname.md)
   - [`ip`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Network-Configuration/IP.md)
   - [`ifconfig`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Network-Configuration/Ifconfig.md)
@@ -126,10 +126,10 @@ Collection of Linux fundamental concepts, commands, and configurations. Designed
 
 ## 📊 Process Management, and Monitoring Tools
 
-- 🔄 [`ps`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Process-Management/Process-Management.md#viewing-processes-with-ps-command)
-- 🗺️ [`jobs`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Process-Management/Process-Management.md#viewing-and-managing-jobs)
-- ➡️ [`fg`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Process-Management/Process-Management.md#running-commands-in-the-background--foreground)
-- 🗜️ [`htop`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Process-Management/Process-Management.md#monitoring-processes-in-real-time) 
+- 🔄 [`ps`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Process-Management/Readme.md#viewing-processes-with-ps-command)
+- 🗺️ [`jobs`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Process-Management/Readme.md#viewing-and-managing-jobs)
+- ➡️ [`fg`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Process-Management/Readme.md#running-commands-in-the-background--foreground)
+- 🗜️ [`htop`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Process-Management/Readme.md#monitoring-processes-in-real-time) 
 - ⚡ [`kill`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Memory-Management/Memory-Management.md#kill) 
  
 ### 🦠 Installing & Configuring Antivirus Software
