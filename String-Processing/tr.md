@@ -43,7 +43,7 @@ tr [OPTIONS] SET1 [SET2]
 
 - **Remove all non-alphanumeric characters:**  
   ```bash
-  echo "User@123!" | tr -d '[[:punct:]]'
+  echo "User@123\!" | tr -d '[[:punct:]]'
   ```
 
 ---

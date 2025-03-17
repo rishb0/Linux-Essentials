@@ -53,16 +53,7 @@ Where:
    ```bash
    cat -n filename
    ```
-
-- Show end-of-line characters:
-   ```bash
-   cat -e filename
-   ```
 - Remove extra blank lines in a text file:
     ```bash
     cat -s file.txt
-    ```
-- Create a quick note file from the terminal:
-    ```bash
-    cat > todo.txt
     ```

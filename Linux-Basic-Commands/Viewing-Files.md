@@ -3,7 +3,7 @@ Linux provides several commands to view the contents of a file without opening a
 
 # **`less`**
 
-The `less` command allows you to view the contents of a file one screen at a time. Unlike `cat`, it does not display the entire file at once, making it useful for large files.
+The `less` command allows you to view the contents of a file one screen at a time. 
 
 ### **Syntax**
 ```

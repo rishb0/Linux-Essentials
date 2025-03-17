@@ -10,7 +10,7 @@ apt [options] [package_name]
 
 ## **Examples**  
 
-### **1. Updating and Upgrading Packages**  
+### **Updating and Upgrading Packages**  
 
 - **Update the package list**  
   ```bash
@@ -39,7 +39,7 @@ apt [options] [package_name]
 
 ---
 
-### **2. Installing and Removing Packages**  
+### **Installing and Removing Packages**  
 
 - **Install a package**  
   ```bash
@@ -63,7 +63,7 @@ apt [options] [package_name]
 
 ---
 
-### **3. Cleaning and Managing Dependencies**  
+### **Cleaning and Managing Dependencies**  
 
 - **Remove unused dependencies**  
   ```bash
@@ -77,7 +77,7 @@ apt [options] [package_name]
 
 ---
 
-### **4. Searching and Viewing Package Information**  
+### **Searching and Viewing Package Information**  
 
 - **Search for a package**  
   ```bash
@@ -111,7 +111,7 @@ apt [options] [package_name]
 
 ---
 
-### **5. Managing Package Sources and Fixing Errors**  
+### **Managing Package Sources and Fixing Errors**  
 
 - **Download a package without installing it**  
   ```bash
@@ -141,6 +141,8 @@ apt [options] [package_name]
 - **Unlock APT when another process is using it**  
   ```bash
   rm /var/lib/dpkg/lock
+  ```
+  ```
   rm /var/lib/dpkg/lock-frontend
   ```
 

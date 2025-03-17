@@ -21,9 +21,9 @@ A **user account** represents a **user** (e.g., employee) who uses the system re
    This is a regular user account that is used by anyone who is allowed to work on the system.  
    - A **Regular user** has **moderate privileges**, meaning they can only perform tasks for which they have been granted permission.
    - These accounts are used for **routine work** and can be **disabled** or **deleted** if needed.
-   - **UID** typically starts from **1000** and can go up to **10000**.
+   - **UID** typically starts from **1000** and can go up to **60000**.
 
-3. **ervice/System Accounts**
+3. **Service/System Accounts**
 
    **Service accounts** are created to run **services** and **processes** on the system.  
    - These accounts are not used for **routine work**. 

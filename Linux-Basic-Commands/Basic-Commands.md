@@ -2,14 +2,15 @@
 <h1 align="center">Basic Linux Commands</h1>
 
 ## `pwd`  
-Prints the current working directory.  
+The `pwd` (Print Working Directory) command is used to display the absolute path of the current working directory. 
 
   ```
   pwd
   ```
 
 ## `ls`  
-Lists files and directories in the current directory.  
+`ls` command Used to list the contents of a directory. It provides information about files and directories, such as names, permissions, sizes, and timestamps.
+
 **Syntax:**  
 ```
 ls [options] [directory]
@@ -75,90 +76,72 @@ cd [directory]
 ## **System Information**  
 
 ## `date`  
-Displays the current date and time.  
+- Displays the current date and time.  
 
-**Example:**  
-```
-date
-```
+  ```
+  date
+  ```
 
 ## `time`  
-Displays the system's current time.  
-
-**Example:**  
-```
-time
-```
+-  Displays the system's current time.  
+    ```
+    time
+    ```
 
 ## `cal`  
-Displays a calendar for the current month.  
+- Displays a calendar for the current month.  
 
-**Example:**  
-```
-cal
-```
+  ```
+  cal
+  ```
 
 ## `uptime`  
-Shows how long the system has been running.  
-
-**Example:**  
-```
-uptime
-```
+- Shows how long the system has been running.  
+  ```
+  uptime
+  ```
 
 ## `uname -a`  
-Displays system and kernel information.  
-**Example:**  
-```
-uname -a
-```
+- Displays system and kernel information.  
+  ```
+  uname -a
+  ```
 
 ## `lscpu`  
-Displays CPU architecture details.  
-**Example:**  
-```
-lscpu
-```
+- Displays CPU architecture details.  
+  ```
+  lscpu
+  ```
 
 ## `lsusb`  
-Lists USB devices connected to the system.  
-**Example:**  
-```
-lsusb
-```
+- Lists USB devices connected to the system.  
+  ```
+  lsusb
+  ```
 
 ## `df -h`  
-Shows disk space usage in a human-readable format.  
-**Example:**  
-```
-df -h
-```
+- Shows disk space usage in a human-readable format.
+  ```
+  df -h
+  ```
 
 ## **User and Session Information**  
 
 ## `whoami`  
-Displays the currently logged-in user.  
-**Example:**  
-```
-whoami
-```
+- Displays the currently logged-in user.  
+  ```
+  whoami
+  ```
 
-## `who`  
-Lists all logged-in users.  
-**Example:**  
+## `who`
 - List all logged-in users
   ```
   who
   ```
 
 ## `id`  
-Displays user ID and group information.  
-**Syntax:**  
-```
-id [username]
-```
-**Example:**  
-- ```
+- Displays user ID and group information.  
+  ```
   id user
   ```
 
@@ -166,26 +149,23 @@ id [username]
 ## **Process and Memory Information**  
 
 ## `ps -aux`  
-Lists all running processes.  
-**Example:**  
-```
-ps -aux
-```
+- Lists all running processes.  
+  ```
+  ps -aux
+  ```
 
 ## `top`  
-Shows real-time system statistics.  
-
-**Example:**  
-```
-top
-```
+- Shows real-time system statistics.  
+  ```
+  top
+  ```
 
 ## `free -h`  
-Displays memory and swap usage in a human-readable format.  
-**Example:**  
-```
-free -h
-```
+- Displays memory and swap usage in a human-readable format.  
+
+  ```
+  free -h
+  ```
 
 ## **Help and Documentation**  
 
@@ -245,8 +225,7 @@ shutdown [options] [time]
   ```
 
 ## `reboot`  
-Reboots the system.  
-**Example:**  
-```
-reboot
-```
+- Reboots the system.  
+  ```
+  reboot
+  ```

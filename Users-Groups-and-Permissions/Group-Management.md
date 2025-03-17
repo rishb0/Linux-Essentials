@@ -1,6 +1,6 @@
 # **User Groups in Linux**  
 
-In Linux, **groups** are used to manage user permissions and access to files, directories, and system resources. A user can belong to multiple groups, and groups help in defining shared access privileges.  
+**Groups** are used to manage user permissions and access to files, directories, and system resources. A user can belong to multiple groups, and groups help in defining shared access privileges.  
 
 
 
