@@ -93,12 +93,12 @@ Collection of Linux fundamental concepts, commands, and configurations. Designed
 - 🛠️ [`fdisk` Utility](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/File-System-and-Disk-Management/Fdisk.md#what-is-fdisk)
 - 📂 [Mounting a File System](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/File-System-and-Disk-Management/Mount.md)
 - 📝 [The `/etc/fstab` File](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/File-System-and-Disk-Management/Fdisk.md#what-is-fdisk)
-- 📊 [Quota Management](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/File-System-and-Disk-Management/Managing-Quotas-LVM-and-RAID.md#quota-management-in-linux)
+- 📊 [Quota Management](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/File-System-and-Disk-Management/Quotas-Managment.md)
 - 🔄 [SWAP (Partitions and Files)](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/File-System-and-Disk-Management/Swap.md)
 - 🏗️ [RAID Overview](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/File-System-and-Disk-Management/Raid-Overview.md)
   - ⚡ [Uses of RAID](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/File-System-and-Disk-Management/Raid-Overview.md#uses-of-raid)
   - 📊 [RAID Levels](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/File-System-and-Disk-Management/Raid-Overview.md#raid-levels)
-- 🔍 [Logical Volume Manager (LVM)](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/File-System-and-Disk-Management/Managing-Quotas-LVM-and-RAID.md#logical-volume-manager-lvm-and-raid-setup-and-management)
+- 🔍 [Logical Volume Manager (LVM)](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/File-System-and-Disk-Management/Logical-Volume-Manager.md)
 
 ## 🌐 Network Configuration and Controlling Services
 - 🌍 [Network Configuration](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Network-Configuration/Network-Configuration.md#network-configuration-in-linux)

@@ -1,10 +1,10 @@
-# MOUNT COMMANDS
+# `mount`
 
 The `mount` command is used to attach filesystems to a specified directory in the Linux filesystem hierarchy. Below is a concise guide to using the `mount` command for various tasks.
 
----
 
-## Basic Syntax
+
+## Syntax
 
 ```
 mount [options] <device> <mount_point>
@@ -12,7 +12,6 @@ mount [options] <device> <mount_point>
 - **device**: The device or partition to be mounted (e.g., `/dev/sda1`).
 - **mount_point**: The directory where the filesystem will be attached (e.g., `/mnt/data`).
 
----
 
 ## Common Mounting Commands
 
@@ -61,7 +60,6 @@ mount [options] <device> <mount_point>
   mount -v /dev/sda1 /mnt
   ```
 
----
 
 ## Viewing Mounted Filesystems
 
@@ -85,7 +83,6 @@ mount [options] <device> <mount_point>
   lsblk
   ```
 
----
 
 ## Unmounting Filesystems
 
@@ -109,7 +106,7 @@ mount [options] <device> <mount_point>
   umount -f /mnt
   ```
 
----
+
 
 ## Managing Mounted Filesystems
 
@@ -131,7 +128,6 @@ mount [options] <device> <mount_point>
   kill -9 <PID>
   ```
 
----
 
 ## Persistent Mounts
 

@@ -1,21 +1,21 @@
-# **🔄 SWAP (Partitions and Files) in Linux**  
+# **SWAP (Partitions and Files) in Linux**  
 
 ## **What is SWAP?**  
 
 🔄 **SWAP** is a dedicated space on a disk that Linux uses as virtual memory when the system's **RAM (Random Access Memory)** is full. If the system runs out of RAM, it moves inactive processes to the SWAP space to prevent crashes and keep the system running smoothly.
 
----
 
-## **🛠️ Why Use SWAP?**  
 
-✅ Prevents system crashes due to low memory  
-✅ Helps multitasking on systems with limited RAM  
-✅ Supports hibernation (suspend-to-disk feature)  
-✅ Improves performance for memory-intensive applications  
+## **Why Use SWAP?**  
 
-💡 **Note:** SWAP is slower than RAM because it relies on disk storage, so excessive swapping (thrashing) can degrade performance.
+- Prevents system crashes due to low memory  
+- Helps multitasking on systems with limited RAM  
+- Supports hibernation (suspend-to-disk feature)  
+- Improves performance for memory-intensive applications  
 
----
+**Note:** SWAP is slower than RAM because it relies on disk storage, so excessive swapping (thrashing) can degrade performance.
+
+
 
 ## **📂 Types of SWAP in Linux**  
 
@@ -24,7 +24,7 @@ Linux allows SWAP space to be configured in two ways:
 1️⃣ **SWAP Partition** – A dedicated disk partition for swap usage.  
 2️⃣ **SWAP File** – A special file on the filesystem that acts as swap space.  
 
----
+
 
 ## **1️⃣ Creating a SWAP Partition**  
 
@@ -68,55 +68,55 @@ Add this line to `/etc/fstab`:
 /dev/sdb1 none swap sw 0 0
 ```
 
----
 
-## **2️⃣ Creating a SWAP File**  
 
-### **Step 1: Create a Swap File (e.g., 2GB size)**  
-```bash
-sudo fallocate -l 2G /swapfile
-```
-(If `fallocate` is not available, use: `sudo dd if=/dev/zero of=/swapfile bs=1M count=2048`)
+## **2Creating a SWAP File**  
 
-### **Step 2: Set Correct Permissions**  
-```bash
-sudo chmod 600 /swapfile
-```
+- **Create a Swap File (e.g., 2GB size)**  
+   ```bash
+   sudo fallocate -l 2G /swapfile
+   ```
+   (If `fallocate` is not available, use: `sudo dd if=/dev/zero of=/swapfile bs=1M count=2048`)
 
-### **Step 3: Format the File as SWAP**  
-```bash
-sudo mkswap /swapfile
-```
+- **Set Correct Permissions**  
+   ```bash
+   sudo chmod 600 /swapfile
+   ```
 
-### **Step 4: Enable the SWAP File**  
-```bash
-sudo swapon /swapfile
-```
+- **Format the File as SWAP**  
+   ```bash
+   sudo mkswap /swapfile
+   ```
 
-### **Step 5: Make the SWAP File Permanent**  
-Add the following line to `/etc/fstab`:  
-```bash
-/swapfile none swap sw 0 0
-```
+- **Enable the SWAP File**  
+   ```bash
+   sudo swapon /swapfile
+   ```
 
----
+- **Make the SWAP File Permanent**  
+   Add the following line to `/etc/fstab`:  
+   ```bash
+   /swapfile none swap sw 0 0
+   ```
 
-## **🛠️ Managing SWAP**  
 
-### **Check Swap Usage**  
-```bash
-free -m
-```
 
-### **Disable SWAP Temporarily**  
-```bash
-sudo swapoff -a
-```
+## **Managing SWAP**  
 
-### **Enable SWAP Again**  
-```bash
-sudo swapon -a
-```
+- **Check Swap Usage**  
+   ```bash
+   free -m
+   ```
+
+- **Disable SWAP Temporarily**  
+   ```bash
+   sudo swapoff -a
+   ```
+
+- **Enable SWAP Again**  
+   ```bash
+   sudo swapon -a
+   ```
 
 ### **Remove a SWAP File Permanently**  
 1. Disable SWAP:  
@@ -129,9 +129,7 @@ sudo swapon -a
    ```
 3. Edit `/etc/fstab` and remove the swap entry.
 
----
-
-## **📊 How Much SWAP Do You Need?**  
+## **How Much SWAP Do You Need?**  
 
 | RAM Size | Recommended SWAP (No Hibernate) | Recommended SWAP (With Hibernate) |
 |----------|--------------------------------|----------------------------------|
@@ -140,4 +138,4 @@ sudo swapon -a
 | 8GB | 2GB | 1× RAM |
 | 16GB+ | 2GB (or none) | 1× RAM |
 
-💡 **Note:** If you use SSD storage, consider using a smaller swap size to reduce write operations.
+**Note:** If you use SSD storage, consider using a smaller swap size to reduce write operations.

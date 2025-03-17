@@ -1,5 +1,5 @@
 
-# Logical Volume Manager (LVM) and RAID Setup and Management
+# Logical Volume Manager (LVM) Management
 
 Logical Volume Manager (LVM) is a storage management solution in Linux that provides flexibility and advanced features for managing disk space. It allows dynamic resizing of partitions.
 
