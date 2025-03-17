@@ -1,6 +1,6 @@
 # `mount`
 
-The `mount` command is used to attach filesystems to a specified directory in the Linux filesystem hierarchy. Below is a concise guide to using the `mount` command for various tasks.
+The `mount` command is used to attach filesystems to a specified directory in the Linux filesystem hierarchy.
 
 
 

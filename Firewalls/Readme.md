@@ -42,7 +42,7 @@ Inbound traffic originates externally and poses potential security risks. Firewa
 ### **Outbound Traffic**
 Outbound traffic originates within the network and is typically permitted by default. However, restricting unnecessary outbound connections can prevent data exfiltration and unauthorized communications.
 
-## **iptables**
+## **[iptables](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Firewalls/Iptables.md)**
 
 **iptables** is a traditional Linux firewall tool used to define packet filtering rules. It employs a table-and-chain architecture:
 
@@ -53,15 +53,15 @@ Outbound traffic originates within the network and is typically permitted by def
 
 iptables applies rules sequentially within each chain, determining whether packets are accepted, dropped, or rejected.
 
-## **nftables**
+## **[nftables](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Firewalls/Nftable.md)**
 
 **nftables** is the successor to iptables, offering a streamlined syntax, improved performance, and atomic rule updates. It integrates table, chain, and rule definitions within a single framework. Key enhancements include support for sets, maps, and variables, allowing for more efficient rule management.
 
-## **firewalld**
+## **[firewalld](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Firewalls/Firewalld.md)**
 
 **firewalld** is a dynamic firewall management tool, designed for ease of use. It introduces the concept of **zones**, each representing different trust levels (e.g., public, internal, trusted). Unlike iptables, firewalld applies rule modifications immediately without requiring service restarts. It also supports predefined services, rich rules, and network interface-based configurations.
 
-## **UFW (Uncomplicated Firewall)**
+## **[UFW (Uncomplicated Firewall)](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Firewalls/UFW.md)**
 
 **UFW** simplifies firewall configuration by abstracting complex iptables commands into an intuitive syntax. Key features include:
 - **Simplified Command Structure** (e.g., `ufw allow 22/tcp`)

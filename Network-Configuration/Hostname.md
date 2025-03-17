@@ -1,4 +1,4 @@
-`hostname`  
+# `hostname`  
 The `hostname` command is used to display or set the system's hostname in Linux.
 
 ## **Syntax**  

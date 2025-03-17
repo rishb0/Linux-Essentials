@@ -2,7 +2,7 @@
 
 ## **What is SWAP?**  
 
-🔄 **SWAP** is a dedicated space on a disk that Linux uses as virtual memory when the system's **RAM (Random Access Memory)** is full. If the system runs out of RAM, it moves inactive processes to the SWAP space to prevent crashes and keep the system running smoothly.
+**SWAP** is a dedicated space on a disk that Linux uses as virtual memory when the system's **RAM (Random Access Memory)** is full. If the system runs out of RAM, it moves inactive processes to the SWAP space to prevent crashes and keep the system running smoothly.
 
 
 
@@ -17,16 +17,16 @@
 
 
 
-## **📂 Types of SWAP in Linux**  
+## **Types of SWAP in Linux**  
 
 Linux allows SWAP space to be configured in two ways:  
 
-1️⃣ **SWAP Partition** – A dedicated disk partition for swap usage.  
-2️⃣ **SWAP File** – A special file on the filesystem that acts as swap space.  
+**SWAP Partition** – A dedicated disk partition for swap usage.  
+**SWAP File** – A special file on the filesystem that acts as swap space.  
 
 
 
-## **1️⃣ Creating a SWAP Partition**  
+## **Creating a SWAP Partition**  
 
 ### **Step 1: Check Existing SWAP**  
 ```bash
@@ -70,7 +70,7 @@ Add this line to `/etc/fstab`:
 
 
 
-## **2Creating a SWAP File**  
+## **Creating a SWAP File**  
 
 - **Create a Swap File (e.g., 2GB size)**  
    ```bash

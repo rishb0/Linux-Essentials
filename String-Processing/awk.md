@@ -107,6 +107,10 @@ awk 'pattern {action}' filename
 - **Process `/etc/passwd` and extract specific fields:**  
   ```bash
   awk '{print NF}' /etc/passwd
+  ```
+  ```
   awk '{print $NF}' /etc/passwd
+  ```
+  ```
   awk '{print $NF, $(NF-1)}' /etc/passwd
   ```

@@ -6,7 +6,6 @@ Special permissions in Linux extend beyond the standard **read (r)**, **write (w
 2. **Setgid (SGID)**
 3. **Sticky Bit**
 
-Let’s break down each of these special permissions in detail:
 
 ---
 
