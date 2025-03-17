@@ -101,7 +101,7 @@ Collection of Linux fundamental concepts, commands, and configurations. Designed
 - 🔍 [Logical Volume Manager (LVM)](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/File-System-and-Disk-Management/Logical-Volume-Manager.md)
 
 ## 🌐 Network Configuration and Controlling Services
-- 🌍 [Network Configuration](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Network-Configuration/Network-Configuration.md#network-configuration-in-linux)
+- 🌍 [Network Configuration](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Network-Configuration/Readme.md)
   - [`hostname`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Network-Configuration/Hostname.md)
   - [`ip`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Network-Configuration/IP.md)
   - [`ifconfig`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Network-Configuration/Ifconfig.md)
