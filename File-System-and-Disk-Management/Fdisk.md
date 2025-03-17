@@ -1,17 +1,15 @@
-# FDISK COMMANDS
+# `fdisk`
 
 Fdisk is a Linux command-line tool for managing disk partitions, supporting both MBR and GPT partition schemes. It enables users to create, delete, modify, and view partitions interactively.
 
----
-
-## Basic Syntax
+## Syntax
 
 ```
 fdisk [options] <device>
 ```
 - `<device>`: Specifies the disk device (e.g., `/dev/sda`, `/dev/nvme0n1`).
 
----
+
 
 ## Basic Concepts
 
@@ -21,9 +19,7 @@ fdisk [options] <device>
 - **Partition:**  
   A subdivision of a disk. It can contain a filesystem or swap space. For example, `/dev/sdb1` is the first partition on disk `/dev/sdb`.
 
----
-
-## Partition Types Supported
+## Partition Types
 
 - **MBR (DOS partition table):**  
   Default for older systems and disks ≤ 2TB.
@@ -36,8 +32,6 @@ fdisk [options] <device>
   
 - **SGI (IRIX) Partition Table:**  
   Used in SGI IRIX systems (rare).
-
----
 
 ## List All Available Storage Devices and Partitions
 
@@ -69,8 +63,6 @@ Device     Boot Start       End   Sectors  Size Id Type
 /dev/sdb3       4196352 1048575999 1044389648 500G 83 Linux
 ```
 
----
-
 ## Opening a Specific Disk in Fdisk
 
 *Caution: Choose the correct disk (e.g., `/dev/sdX`) to avoid data loss.*
@@ -81,7 +73,6 @@ fdisk /dev/sdX
 
 This command opens the disk in interactive mode.
 
----
 
 ## Interactive Mode Commands
 
@@ -292,37 +283,33 @@ No errors detected.
   ```
   x
   ```
----
 
-# GDISK COMMANDS
+
+# `gdisk`
 
 Gdisk is used for managing GPT (GUID Partition Table) disks. Use gdisk when dealing with modern systems that use UEFI or when working with disks larger than 2TB. In contrast, use fdisk for older systems with MBR partition schemes. Use fdisk for managing MBR disks (older systems, BIOS) and gdisk for GPT disks (modern UEFI systems, disks >2TB). The commands below provide a concise reference to view, create, delete, and modify GPT partitions using gdisk. Use these commands carefully to manage your disk partitions effectively.
 
----
 
 ## Basic Syntax
 
 ```
 gdisk [options] <device>
 ```
-- **<device>**: Disk device (e.g., `/dev/sda`, `/dev/nvme0n1`).
+- `<device>`: Disk device (e.g., `/dev/sda`, `/dev/nvme0n1`).
 
----
+
 
 ## Key Commands
 
-- **List Partition Table:**  
+- **Displays detailed partition information for the specified disk.**  
   ```
   gdisk -l /dev/sda
   ```  
-  Displays detailed partition information for the specified disk.
 
-- **Open Disk in Interactive Mode:**  
+- **Opens the disk for partition management (choose the correct disk!).**  
   ```
   gdisk /dev/sda
   ```  
-  Opens the disk for partition management (choose the correct disk!).
-
 - **Display Help:**  
   In interactive mode, type:
   ```
@@ -379,40 +366,3 @@ gdisk [options] <device>
   ```
   q
   ```
---- 
-# PARTPROBE COMMANDS
-
-- **`partprobe` updates the kernel's partition table without a reboot.**  
-- **Use after creating, deleting, or modifying partitions to apply changes.**  
-- **`partprobe` updates the whole table, while `partx` manages specific partitions.**
-
----
-
-## Basic Syntax
-
-```
-partprobe [OPTIONS] [DEVICE]
-```
-- Refreshes partition table for all disks or a specific device
-- Helps avoid system reboot after partition modifications
-
----
-
-## Common Commands
-
-- **Refresh All Partition Tables:**
-  ```
-  partprobe
-  ```
-
-- **Refresh Specific Disk:**
-  ```
-  partprobe /dev/sdb
-  ```
-
-- **Check Reload Status:**
-  ```
-  echo $?
-  ```
-  - `0`: Success
-  - `1`: Error
