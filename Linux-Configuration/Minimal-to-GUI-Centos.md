@@ -2,7 +2,7 @@
 
 CentOS Minimal provides a minimal set of packages, which is ideal for servers without a graphical user interface (GUI). If you need a GUI on your CentOS minimal system, you can install it manually. Below are the necessary steps to install the GNOME Desktop Environment and other useful packages.
 
----
+
 
 ## Installing GNOME Desktop Environment
 
@@ -28,7 +28,7 @@ yum group install "GNOME Desktop Environment"
 - This command installs all necessary packages for GNOME.
 - Ensure that both `baseos` and `appstream` repositories are enabled.
 
----
+
 
 ## Configuring the System to Boot into GUI
 
@@ -66,7 +66,7 @@ systemctl isolate graphical.target
 - Immediately starts the GUI.
 - **Note**: This is temporary; after reboot, the system will use the default target set previously.
 
----
+
 
 ## Starting GUI Manually
 
@@ -79,7 +79,7 @@ startx
 - Initializes an X session and starts the default window manager or desktop environment.
 - Useful if you prefer to boot into command-line mode but occasionally need a GUI.
 
----
+
 
 ## Reboot the System
 
@@ -89,7 +89,7 @@ After making changes, it's recommended to reboot the system to apply all setting
 reboot
 ```
 
----
+
 
 ## Alternative Desktop Environments
 
@@ -100,7 +100,7 @@ You can install other desktop environments based on your preferences.
 ```
 yum group install "KDE Plasma Workspaces"
 ```
----
+
 
 ## Installing Additional Packages on Minimal Installation
 

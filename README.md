@@ -143,11 +143,11 @@ Collection of Linux fundamental concepts, commands, and configurations. Designed
 - 🚧 [`nft`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Firewalls/Nftable.md)
 
 ### 📊 Memory Management and System Performance Commands
-- 📈 [`free`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Memory-Management/Memory-Management.md#free)
-- 📈 [`vmstat`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Memory-Management/Memory-Management.md#vmstat)
-- 📊 [`iostat`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Memory-Management/Memory-Management.md#iostat)
-- 🔎 [`lsof`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Memory-Management/Memory-Management.md#losf)
-- 🌐 [`kill`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Memory-Management/Memory-Management.md#kill)
+- 📈 [`free`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Memory-Management/Readme.md#free)
+- 📈 [`vmstat`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Memory-Management/Readme.md#vmstat)
+- 📊 [`iostat`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Memory-Management/Readme.md#iostat)
+- 🔎 [`lsof`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Memory-Management/Readme.md#losf)
+- 🌐 [`kill`](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Memory-Management/Readme.md#kill)
 
 ---
 ### 🤝 Contributing

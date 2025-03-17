@@ -1,13 +1,5 @@
-# Reset and Change Root Password via GRUB Menu at Startup
+# Reset Root Password via GRUB Menu at Startup
 
-
-
-
-
-**"This guide explains how to reset and change the root password by editing the GRUB menu during system startup. Follow these steps:**
-
-
----
 
 ### **Steps to Edit GRUB and Reset Password:**
 
@@ -77,12 +69,3 @@ Minimum Emacs-like screen editing is supported. TAB lists completions. Press Ctr
      ```bash
      reboot -f
      ```
-     
-
----
-by [Tanush Kushwah](https://www.linkedin.com/in/tanush-kushwah-b51a97319/?originalSubdomain=in)
-
-
-
-
-
