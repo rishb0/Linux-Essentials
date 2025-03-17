@@ -1,4 +1,4 @@
-# **LibreOffice and Apache OpenOffice Installation & Uninstallation Guide**
+# **LibreOffice and Apache OpenOffice Installation & Uninstallation**
 
 ## **LibreOffice**
 

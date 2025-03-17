@@ -1,6 +1,6 @@
 # **Protecting the GRUB Boot Loader with a Password (CentOS 9/Linux)**  
 
----
+
 
 ## **Why Secure the GRUB Boot Loader?**  
 
@@ -8,7 +8,7 @@
 - Restrict access to **single-user mode**, which can be used to reset passwords.  
 - Protect the system from **boot-time attacks** and unauthorized changes.  
 
----
+
 
 ## **Steps to Secure GRUB with a Password**  
 
@@ -20,7 +20,7 @@ Ensure that GRUB tools are installed on your system.
 dnf install grub2-tools
 ```  
 
----
+
 
 ### **Step 2 - Generate an Encrypted GRUB Password**  
 
@@ -40,7 +40,7 @@ dnf install grub2-tools
 
 4. **Copy this password**, as it will be used in the next step.  
 
----
+
 
 ### **Step 3 - Edit the GRUB Configuration File**  
 
@@ -62,7 +62,7 @@ dnf install grub2-tools
 
 3. Save the file and exit (`CTRL + X`, then `Y`, and press `Enter`).  
 
----
+
 
 ### **Step 4 - Update the GRUB Configuration**  
 
@@ -80,7 +80,7 @@ After modifying the configuration file, update GRUB so changes take effect.
    cat /boot/grub2/grub.cfg | grep "password_pbkdf2"
    ```
 
----
+
 
 ### **Step 5 - Testing GRUB Password Protection**  
 
@@ -96,15 +96,9 @@ After modifying the configuration file, update GRUB so changes take effect.
 
 4. Enter the **username and password** you set up in Step 3.  
 
----
+
 
 ## **Additional Security Measures**  
 
 - **Restrict BIOS Access:** Set a **BIOS/UEFI password** to prevent boot changes.  
 - **Disable Boot from External Devices:** Prevent unauthorized users from booting another OS via USB.  
-
----
-
-## **Conclusion**  
-
-Setting a GRUB password **adds an extra layer of security** to prevent unauthorized users from modifying system boot settings. 

@@ -32,7 +32,7 @@ rpm -qlp nginx-1.26.2-2.el9.ngx.x86_64.rpm
 
 This command displays all the files that the RPM package would install, allowing you to compare them with the extracted files.
 
----
+
 
 
 ## Extracting Files from an ISO File

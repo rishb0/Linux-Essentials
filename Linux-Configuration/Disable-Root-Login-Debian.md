@@ -86,5 +86,3 @@ sudo systemctl restart ssh
 ## Step 5: Log in as Root
 1. Restart your system.
 2. At the login screen, select `root` and enter the password.
-
-Now, root login in GUI should be enabled on Debian. 🚀
