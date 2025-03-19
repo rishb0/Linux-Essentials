@@ -7,11 +7,11 @@
 ### VirtualBox Setup
 
 - Open VirtualBox and click **New**.
-- ![image](https://github.com/user-attachments/assets/4010574f-3b26-4011-a4e9-a9bbde7b04f7)
+  ![image](https://github.com/user-attachments/assets/4010574f-3b26-4011-a4e9-a9bbde7b04f7)
  
   
 - Set the name to **CentOS 9**, type to **Linux**, and version to **Red Hat (64-bit)**.
-- ![image](https://github.com/user-attachments/assets/07aa82f7-0b17-4f15-bd44-2be54894af8d)
+  ![image](https://github.com/user-attachments/assets/07aa82f7-0b17-4f15-bd44-2be54894af8d)
 
   
 - Allocate **4096 MB** RAM (According to requirement).  
@@ -23,19 +23,19 @@
   - Select **VDI (Virtual Disk Image)**  
   - Choose **Dynamically allocated**  
   - Set **file location and size to 40 GB** (According to requirement)
-  - ![image](https://github.com/user-attachments/assets/b2434416-0f17-4758-978a-b2d4eb1978cd)
-  - ![image](https://github.com/user-attachments/assets/4a38f3ac-88df-4f7d-bb7a-1e9bc81c6c5f)
+  ![image](https://github.com/user-attachments/assets/b2434416-0f17-4758-978a-b2d4eb1978cd)
+  ![image](https://github.com/user-attachments/assets/4a38f3ac-88df-4f7d-bb7a-1e9bc81c6c5f)
 
 
   
 - Start the virtual machine,  
-- ![image](https://github.com/user-attachments/assets/74141dc6-3982-453b-88bb-19957bf76d37)
+  ![image](https://github.com/user-attachments/assets/74141dc6-3982-453b-88bb-19957bf76d37)
 
 - select the CentOS 9 ISO
-- ![image](https://github.com/user-attachments/assets/09d61c84-fb26-45a5-be04-d7ed3f6f3318)
+  ![image](https://github.com/user-attachments/assets/09d61c84-fb26-45a5-be04-d7ed3f6f3318)
 
 - and click **mount and reboot**
-- ![image](https://github.com/user-attachments/assets/0e0d2168-0db0-43a1-9c1e-1a914434ba96)
+  ![image](https://github.com/user-attachments/assets/0e0d2168-0db0-43a1-9c1e-1a914434ba96)
 
 
 
@@ -45,18 +45,18 @@
 ## Installation
 
 - Choose **Install CentOS 9**.
-- ![image](https://github.com/user-attachments/assets/51bc9f60-c3d7-40a7-8491-917fe9e2854d)
+  ![image](https://github.com/user-attachments/assets/51bc9f60-c3d7-40a7-8491-917fe9e2854d)
 
  
 - Select **English > English (India) > Continue**.
-- ![image](https://github.com/user-attachments/assets/8bae1089-ce2b-4023-84a8-88e5995a32aa)
+  ![image](https://github.com/user-attachments/assets/8bae1089-ce2b-4023-84a8-88e5995a32aa)
 
 
 - Configure settings:  
   - **Date & Time**: Asia/Kolkata > Done  
   - **Keyboard Layout**: English (India, with rupee) > Add English (US) > Done  
   - **Language Support**: English (India) > Done
-  - ![image](https://github.com/user-attachments/assets/1b8d4d16-588b-4771-bc97-0cd0bb64fe89)
+  ![image](https://github.com/user-attachments/assets/1b8d4d16-588b-4771-bc97-0cd0bb64fe89)
 
   
 
@@ -107,7 +107,7 @@
  
 
 - Installation Destination
-- ![image](https://github.com/user-attachments/assets/f4aea9c9-f85a-4172-89a3-1c59a6e9c573)
+  ![image](https://github.com/user-attachments/assets/f4aea9c9-f85a-4172-89a3-1c59a6e9c573)
 
   
   - **Custom partitioning** > Done  
@@ -193,8 +193,8 @@
   - Full name: `<demouser>`  
   - Username: `<demouser>`  
   - Tick **Make this user administrator**
-  - ![image](https://github.com/user-attachments/assets/2d8e2c4c-67aa-4bd1-81ca-094b82836d8b)
-  - ![image](https://github.com/user-attachments/assets/982fb8f2-dcd7-4a19-9ed2-67b0de06ea6d)
+  ![image](https://github.com/user-attachments/assets/2d8e2c4c-67aa-4bd1-81ca-094b82836d8b)
+  ![image](https://github.com/user-attachments/assets/982fb8f2-dcd7-4a19-9ed2-67b0de06ea6d)
 
 
 
@@ -215,6 +215,3 @@
 
 [click begin installation]
 ![image](https://github.com/user-attachments/assets/3fb14014-7dcc-4b27-bdf7-3c81ffff9a9d)
-
-
-
