@@ -213,5 +213,4 @@
     Create a non-root user for daily use
     
 
-[click begin installation]
-![image](https://github.com/user-attachments/assets/3fb14014-7dcc-4b27-bdf7-3c81ffff9a9d)
+[click begin installation]![image](https://github.com/user-attachments/assets/3fb14014-7dcc-4b27-bdf7-3c81ffff9a9d)
