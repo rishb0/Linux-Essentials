@@ -56,7 +56,7 @@ awk 'pattern {action}' filename
 
 - **Modify text dynamically (change the first field to uppercase):**  
   ```bash
-  echo "armour infosec" | awk '{$1="ARMOUR"; print $1}'
+  echo "armour infosec" | awk '{$1=toupper($1); print}'
   ```
 
 - **Filter and print lines from `/etc/passwd` where username is `root`:**  

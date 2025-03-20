@@ -32,32 +32,32 @@ grep [options] pattern [file]
 
 - Find multiple words (**'session', 'root', or 'mounting'**):  
   ```bash
-  grep -E "(session|root|mounting)" var/log/messages
+  grep -E "session|root|mounting" /var/log/messages
   ```
 
 - Find lines containing **both** 'session' and 'root':  
   ```bash
-  grep "session" var/log/messages | grep root
+  grep "session" /var/log/messages | grep root
   ```
 
 - Find lines with **'session'** but **not** 'root':  
   ```bash
-  grep "session" var/log/messages | grep -v root
+  grep "session" /var/log/messages | grep -v root
   ```
 
 - Find lines where **'root' appears at the start**:  
   ```bash
-  grep "^root" var/log/messages
+  grep "^root" /var/log/messages
   ```
 
 - Find lines where **'root' appears at the end**:  
   ```bash
-  grep "root$" var/log/messages
+  grep "root$" /var/log/messages
   ```
 
 - Find logs for **'root' on 2nd September'**:  
   ```bash
-  grep "^2sep" var/log/messages | grep root
+  grep "^2sep" /var/log/messages | grep root
   ```
 
 - Find **'roo'** followed by any **single character**:  

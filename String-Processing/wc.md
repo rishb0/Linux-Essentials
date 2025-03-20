@@ -32,7 +32,7 @@ wc [OPTIONS] file
   wc -w file.txt
   ```
 
-- Count only **characters** in a file:  
+- Count only **characters** (including spaces) in a file:  
   ```bash
   wc -m file.txt
   ```

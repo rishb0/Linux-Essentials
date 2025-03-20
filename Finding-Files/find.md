@@ -60,9 +60,9 @@ find [path] [expression]
 
 - **Execute commands on found files:**  
   ```bash
-  find . -exec date \;
-  find . -exec id \;
-  find . -exec uname \;
+  find . -exec date {} \;
+  find . -exec id {} \;
+  find . -exec uname {} \;
   ```
 
 - **Find files with multiple patterns:**  

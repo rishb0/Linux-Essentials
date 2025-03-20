@@ -40,8 +40,8 @@ tail [OPTIONS] file
   tail -n 5 -f logfile.txt
   ```
 
-- Use `tail` with `cat` to extract part of a file:  
+- Display the last 7 lines of a file efficiently:  
   ```bash
-  cat file.txt | tail -n 7
+  tail -n 7 file.txt
   ```
 
