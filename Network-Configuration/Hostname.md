@@ -122,4 +122,3 @@ hostname [options] [new_hostname]
   dnsdomainname
   ```
 
---

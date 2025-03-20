@@ -38,7 +38,7 @@ Where:
    ```bash
    cat > file1.txt
    ```
-   (Press **Ctrl + C** to save and exit.)
+   (Press **Ctrl + D** to save and exit.)
 
 - Append content to an existing file:
    ```bash

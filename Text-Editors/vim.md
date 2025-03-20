@@ -32,7 +32,7 @@ vim [OPTIONS] filename
   ```
   vim file1.txt file2.txt
   ```
-  (Use `:n` to switch between files.)  
+  (Use :n to go to the next file and :N to go to the previous file.) 
 
 - Open a file in **diff mode** (compare two files):  
   ```

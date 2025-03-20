@@ -36,9 +36,9 @@ sort [OPTIONS] file
   sort -u file.txt
   ```
 
-- Sort based on the **second column**:  
+- Sort based on the **second column** (numerically if needed): 
   ```bash
-  sort -k2 file.txt
+  sort -k2,2 file.txt
   ```
 
 - Sort a file while ignoring case:  

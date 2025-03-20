@@ -35,8 +35,8 @@ head [OPTIONS] file
   head -n 15 logfile.txt
   ```
 
-- Use `head` with `cat` to extract part of a file:  
+- Display the first 7 lines of a file efficiently: 
   ```bash
-  cat file.txt | head -n 7
+  head -n 7 file.txt
   ```
 

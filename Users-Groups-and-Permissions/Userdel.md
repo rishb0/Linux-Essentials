@@ -24,12 +24,6 @@ userdel [options] username
   ```bash
   userdel -f username
   ```
-
-- **Remove the user but keep the home directory:**  
-  ```bash
-  userdel username
-  ```
-
 ---
 
 ### **Important Notes**  

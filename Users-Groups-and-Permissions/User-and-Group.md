@@ -38,6 +38,4 @@ A **user account** represents a **user** (e.g., employee) who uses the system re
 
 ## **What is a Group?**
 
-A **group** is a collection of users that allows system administrators to manage users with similar permissions or access rights collectively. Instead of assigning permissions to individual users, the administrator can assign them to a group, and then apply those permissions or restrictions to the entire group.
-
-A **group** is a collection of users that enables system administrators to apply similar permissions and restrictions to a set of users collectively. When multiple users require similar rights, they can be placed in a group, and then permissions related to those rights can be applied to the entire group.
+A **group** is a collection of users that allows system administrators to manage multiple users with similar permissions collectively. Instead of assigning permissions to individual users, they can be granted to the group, simplifying access control.
