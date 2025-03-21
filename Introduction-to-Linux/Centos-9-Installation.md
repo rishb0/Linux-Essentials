@@ -7,35 +7,35 @@
 ### VirtualBox Setup
 
 - Open VirtualBox and click **New**.
-  ![image](https://github.com/user-attachments/assets/4010574f-3b26-4011-a4e9-a9bbde7b04f7)
+  ![image](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Images/cent1.png)
  
   
 - Set the name to **CentOS 9**, type to **Linux**, and version to **Red Hat (64-bit)**.
-  ![image](https://github.com/user-attachments/assets/07aa82f7-0b17-4f15-bd44-2be54894af8d)
+  ![image](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Images/cent2.png)
 
   
 - Allocate **4096 MB** RAM (According to requirement).  
   2 core CPU
-  ![image](https://github.com/user-attachments/assets/71559668-16fc-4594-92be-e6e274dd01ab)
+  ![image](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Images/cent3.png)
  
   
 - Create a virtual disk:  
   - Select **VDI (Virtual Disk Image)**  
   - Choose **Dynamically allocated**  
   - Set **file location and size to 40 GB** (According to requirement)
-  ![image](https://github.com/user-attachments/assets/b2434416-0f17-4758-978a-b2d4eb1978cd)
-  ![image](https://github.com/user-attachments/assets/4a38f3ac-88df-4f7d-bb7a-1e9bc81c6c5f)
+  ![image](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Images/cent4.png)
+  ![image](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Images/cent5.png)
 
 
   
 - Start the virtual machine,  
-  ![image](https://github.com/user-attachments/assets/74141dc6-3982-453b-88bb-19957bf76d37)
+  ![image](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Images/cent6.png)
 
 - select the CentOS 9 ISO
-  ![image](https://github.com/user-attachments/assets/09d61c84-fb26-45a5-be04-d7ed3f6f3318)
+  ![image](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Images/cent7.png)
 
 - and click **mount and reboot**
-  ![image](https://github.com/user-attachments/assets/0e0d2168-0db0-43a1-9c1e-1a914434ba96)
+  ![image](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Images/cent8.png)
 
 
 
@@ -45,18 +45,18 @@
 ## Installation
 
 - Choose **Install CentOS 9**.
-  ![image](https://github.com/user-attachments/assets/51bc9f60-c3d7-40a7-8491-917fe9e2854d)
+  ![image](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Images/cent9.png)
 
  
 - Select **English > English (India) > Continue**.
-  ![image](https://github.com/user-attachments/assets/8bae1089-ce2b-4023-84a8-88e5995a32aa)
+  ![image](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Images/cent10.png)
 
 
 - Configure settings:  
   - **Date & Time**: Asia/Kolkata > Done  
   - **Keyboard Layout**: English (India, with rupee) > Add English (US) > Done  
   - **Language Support**: English (India) > Done
-  ![image](https://github.com/user-attachments/assets/1b8d4d16-588b-4771-bc97-0cd0bb64fe89)
+  ![image](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Images/cent11.png)
 
   
 
@@ -74,9 +74,9 @@
     Change source, verify media, or fallback to network if no valid media is found  
   
   [for now select auto detect media]
-  ![image](https://github.com/user-attachments/assets/d822d9c4-4834-439c-ac70-d6d587115f83)
+  ![image](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Images/cent12.png)
 
-  ![image](https://github.com/user-attachments/assets/bb5d0d4a-8cdb-4b36-a402-dd14c4abea7d)
+  ![image](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Images/cent13.png)
  
   
 - **Software Selection**: Select **Server with GUI**  
@@ -100,14 +100,14 @@
       -  System Administration Tools: Diagnostic and monitoring tools  
   
   [for now don't select anything]
-  ![image](https://github.com/user-attachments/assets/e4236616-ef60-4d69-8820-a5eca429d030)
-  ![image](https://github.com/user-attachments/assets/a74b1eb9-43b8-4850-94e8-ed0109f9bf5f)
+  ![image](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Images/cent14.png)
+  ![image](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Images/cent15.png)
 
 
  
 
 - Installation Destination
-  ![image](https://github.com/user-attachments/assets/f4aea9c9-f85a-4172-89a3-1c59a6e9c573)
+  ![image](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Images/cent16.png)
 
   
   - **Custom partitioning** > Done  
@@ -151,10 +151,10 @@
          § Option to encrypt partitions for security  
       4. Additional Space:  
          § Reclaim space from existing partitions if needed
-  ![image](https://github.com/user-attachments/assets/3e0b4162-845f-43f4-8b27-259948e796d9)
-  ![image](https://github.com/user-attachments/assets/aa373c53-02f6-4425-9009-f92c25bcfc66)
-  ![image](https://github.com/user-attachments/assets/558aa6ce-38f2-41aa-8827-7fb3ef07cdef)
-  ![image](https://github.com/user-attachments/assets/276942a8-29d5-4bd4-8a11-0be2d6972181)
+  ![image](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Images/cent17.png)
+  ![image](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Images/cent18.png)
+  ![image](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Images/cent19.png)
+  ![image](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Images/cent20.png)
 
 
  
@@ -179,7 +179,7 @@
   - Enable **enp0s3**  
   - Configure IPv4 manually, disable IPv6, save settings  
   - Set hostname to **Demo**
-  - ![image](https://github.com/user-attachments/assets/52f31fba-f00a-4c35-9f77-7f9ad3923179)
+  ![image](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Images/cent21.png)
 
   
 - **Security Policy**: No changes  
@@ -193,8 +193,8 @@
   - Full name: `<demouser>`  
   - Username: `<demouser>`  
   - Tick **Make this user administrator**
-  ![image](https://github.com/user-attachments/assets/2d8e2c4c-67aa-4bd1-81ca-094b82836d8b)
-  ![image](https://github.com/user-attachments/assets/982fb8f2-dcd7-4a19-9ed2-67b0de06ea6d)
+  ![image](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Images/cent22.png)
+  ![image](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Images/cent23.png)
 
 
 
@@ -213,4 +213,4 @@
     Create a non-root user for daily use
     
 
-[click begin installation]![image](https://github.com/user-attachments/assets/3fb14014-7dcc-4b27-bdf7-3c81ffff9a9d)
+  ![image](https://github.com/InfoSecWarrior/Linux-Essentials/blob/main/Images/cent24.png)
